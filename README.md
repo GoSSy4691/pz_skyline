@@ -16,24 +16,26 @@ This is a setup and metadata validation tool. It has **not** been tested by runn
 4. Select the server's existing INI. The tool backs it up and applies `Mods=`, `WorkshopItems=`, and required sleep settings. Choosing **Generate settings only** instead means you must apply the generated lines yourself.
 5. Restart your server with a **fresh test world**, join with two players, and complete the checks in [COMPATIBILITY.md](COMPATIBILITY.md). Once satisfied, share `output\player-setup.zip` with players.
 
-The player ZIP is prepared automatically after metadata checks and any selected INI update succeed. It includes the launcher, scripts, native Steam bridge source, matching catalog, exact ordered `server-profile.json`, and instructions. You do not need to assemble those files manually. Files from a failed run must not be distributed; check `output\run-status.json`.
+The player ZIP is prepared automatically after metadata checks and any selected INI update succeed. It includes the launcher, scripts, native Steam bridge source, repository catalog, instructions, and `server-profile.json` as a record of the server scan. Player setup uses the catalog directly. You do not need to assemble those files manually. Files from a failed run must not be distributed; check `output\run-status.json`.
 
 SteamCMD is installed automatically from [Valve's installer](https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip) when needed. SteamCMD asks for the password and Steam Guard code itself. Passwords are not stored in this project. This tool downloads mods; it does not install/start the server game or configure your network.
 
 ## Player: normal setup
 
 1. Install Steam and Project Zomboid **42.21.0**, matching the server. Open Steam and sign in. Close the game.
-2. Extract **all** files from the owner's `player-setup.zip` into a folder.
-3. Double-click `Start-PZModSetup.cmd`, choose **Player → Download/update**, and use the included server profile when offered.
+2. Clone/download this Git repository, or extract **all** files from a `player-setup.zip` generated from the same repository revision as the server.
+3. Double-click `Start-PZModSetup.cmd`, choose **Player → Download/update**, and enter the matching game build. The repository mod list is used automatically.
 4. After setup, launch Project Zomboid. The matching main-menu mod profile is already installed. Verify its body/hair/clothing mods are enabled; fully exit and restart if the game asks, then join the server.
 
 Client mode subscribes/downloads using the running Steam app and the game's installed `steam_api64.dll`, through [Valve's Workshop API](https://partner.steamgames.com/doc/api/ISteamUGC). No Steam SDK DLL is bundled. The launcher selects 64-bit Windows PowerShell and uses a process-only execution-policy override; administrator privileges are not normally required.
 
-Existing subscriptions and downloaded mods are kept. After validation, only the chosen server mods are written to `%USERPROFILE%\Zomboid\mods\default.txt`, with an existing profile backed up beside it. Existing single-player saves retain their own settings. Joining a multiplayer server also uses the server's mod selection.
+Subscriptions are requested one item at a time, with bounded retries for temporary Steam failures. `EResult=3` means Steam reported no network connection: ensure Steam is online and signed in, restart it if needed, and relaunch setup. Persistent failures stop setup before a client profile is installed; already completed subscriptions and downloads are kept for the next run.
+
+Existing subscriptions and downloaded mods are kept. After validation, the repository's selected mods and required dependencies are written to `%USERPROFILE%\Zomboid\mods\default.txt`, with an existing profile backed up beside it. Existing single-player saves retain their own settings. Joining a multiplayer server also uses the server's mod selection.
 
 An old or manually installed copy can provide the **same mod ID** as a selected edition. Disablement in `default.txt` cannot distinguish such copies. In particular, users of the original pack must unsubscribe from old **Barricaded World 2696986935** and remove its remaining copy before using the selected continuation **3529472651**. Setup reports duplicates it finds before installing the client preset; it does not unsubscribe or delete mods for you.
 
-The shared profile checks exact enabled IDs, Workshop mappings, build, and load order. It does not pin Workshop revisions or change the installed game version. After a Workshop update, update/restart the server and give players a fresh ZIP as needed.
+Player and Server owner menus use the multiplayer selection in the repository's `mods.catalog.json`. Player setup does not import `server-profile.json` or offer another mod list. Use the same Git revision on both sides. Workshop revisions are not pinned, and setup does not change the installed game version. After a Workshop update, update/restart the server and rerun player setup as needed.
 
 ## What is required beyond clicking the CMD?
 
@@ -70,7 +72,7 @@ A folder's name/membership does not set load order. `ModFolders.cfg` is optional
 | `output\server-mods.ini` | Ordered Mods/WorkshopItems and required server option lines |
 | `output\load-order.txt` | Final IDs in dependency order |
 | `output\default.txt` | Matching client main-menu preset |
-| `output\server-profile.json` | Exact metadata-checked selection/order to share |
+| `output\server-profile.json` | Record of the metadata-checked server selection/order |
 | `output\player-setup.zip` | Complete player installer folder to distribute |
 | `output\validation.json` | Actual IDs, metadata paths, exclusions, next steps, validation scope |
 | `output\run-status.json` | Latest run outcome, applied INI flag, client install flag, ZIP path |
@@ -91,8 +93,8 @@ Normal users can stay in the menu. Advanced Windows PowerShell examples:
   -SteamUser YOUR_STEAM_LOGIN -SteamCmdDirectory "C:\PZServer" `
   -ServerIni "$env:USERPROFILE\Zomboid\Server\servertest.ini"
 
-# Exact player setup from the owner's profile
-.\Download-PZMods.ps1 -Mode Client -ServerProfile .\server-profile.json
+# Player setup using the repository catalog
+.\Download-PZMods.ps1 -Mode Client -BuildVersion 42.21.0
 
 # Preview without Steam or live configuration changes
 .\Download-PZMods.ps1 -Mode Server -PlanOnly
@@ -100,9 +102,9 @@ Normal users can stay in the menu. Advanced Windows PowerShell examples:
 
 For an unusual Steam location use `-GameDirectory "D:\SteamLibrary\steamapps\common\ProjectZomboid"`. For a custom PZ cache directory use `-ClientDataDirectory "D:\Zomboid"`. `-SkipDownload -WorkshopContentPath "D:\SteamLibrary\steamapps\workshop\content\108600"` checks existing downloads.
 
-Server owners may use `-ExcludeMod ID`, or review the catalog to choose an alternative combination. `-Profile AllRequested` requests the full list and will reject its known conflicting combinations. Loading order cannot repair them. Client mode rejects local exclusions and AllRequested so clients do not diverge from the server profile.
+Server owners may use `-ExcludeMod ID`, or review the catalog to choose an alternative combination. For selection changes that players should also use, update the catalog in Git and distribute the same revision. `-Profile AllRequested` requests the full list and will reject its known conflicting combinations. Loading order cannot repair them. Client mode uses the repository multiplayer selection and rejects local exclusions and AllRequested.
 
-`-AdditionalWorkshopId ID` can supply a newly identified dependency for a server scan. Only required submods are enabled automatically. Add a researched permanent mapping to the catalog before sharing a new player ZIP. With an exact client profile, additional Workshop IDs are rejected; dependencies must be selected on the server first.
+`-AdditionalWorkshopId ID` can supply a newly identified dependency for a server scan. Only required submods are enabled automatically. Add a researched permanent mapping to the repository catalog before sharing a new player ZIP. Client mode rejects manually added Workshop IDs and uses the repository mappings.
 
 ## Offline verification
 
@@ -110,6 +112,6 @@ Server owners may use `-ExcludeMod ID`, or review the catalog to choose an alter
 powershell -NoProfile -ExecutionPolicy Bypass -File .\tests\Verify-PZMods.ps1
 ```
 
-Checks cover the complete new catalog, selected order/variants, B42 folder selection and metadata fallback, common sorter fields, aliases, dependencies, conflicts/cycles/bounds, server backups and required settings, player ZIP contents and repeated replacement, shared profiles, installed Workshop/local duplicates, incomplete scan coverage, client retries/timeouts/stale caches, and menu previews/cancellation/error recovery. Fake Steam sessions and a fake SteamCMD process exercise download behavior without account changes.
+Checks cover the complete new catalog, selected order/variants, B42 folder selection and metadata fallback, common sorter fields, aliases, dependencies, conflicts/cycles/bounds, server backups and required settings, player ZIP contents and repeated replacement, exported selection records, installed Workshop/local duplicates, incomplete scan coverage, client retries/timeouts/stale caches, and menu previews/cancellation/error recovery. The player menu is checked with a conflicting external profile present to verify that it uses the repository catalog. Fake Steam sessions and a fake SteamCMD process exercise download behavior without account changes.
 
 The development machine is macOS. Real Windows double-click/file pickers, Steam DLL initialization/authentication/downloads, dedicated startup, two-client synchronization, and gameplay have not been run here. The checked-in `preview\` files are proposed order/mappings, not evidence of runtime success.

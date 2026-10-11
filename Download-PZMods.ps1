@@ -5,7 +5,7 @@ Set up the supplied Build 42 mods for a server or a Steam client, with a checked
 .EXAMPLE
 .\Download-PZMods.ps1 -Mode Server -BuildVersion 42.21.0 -SteamCmdDirectory C:\PZServer
 .EXAMPLE
-.\Download-PZMods.ps1 -Mode Client -ServerProfile .\server-profile.json
+.\Download-PZMods.ps1 -Mode Client -BuildVersion 42.21.0
 .EXAMPLE
 .\Download-PZMods.ps1 -Mode Server -BuildVersion 42.21.0 -PlanOnly
 #>
@@ -26,7 +26,6 @@ param(
     [switch]$PlanOnly,
     [switch]$SkipDownload,
     [string]$ServerIni,
-    [string]$ServerProfile,
     [string]$GameDirectory,
     [string]$ClientDataDirectory = (Join-Path ([Environment]::GetFolderPath('UserProfile')) 'Zomboid'),
     [ValidateRange(1,86400)][int]$ClientTimeoutSeconds = 1200
@@ -64,19 +63,11 @@ trap {
     throw $failure
 }
 if ($Mode -eq 'Client' -and $ServerIni) { throw '-ServerIni is only available in Server mode.' }
-if ($Mode -eq 'Server' -and $ServerProfile) { throw '-ServerProfile is only available in Client mode.' }
 if ($Mode -eq 'Client' -and ($Profile -ne 'Multiplayer' -or $ExcludeMod.Count -gt 0)) {
-    throw 'Client mode uses the multiplayer server mod selection. Change the server profile, rather than excluding required client mods.'
+    throw 'Client mode uses the repository multiplayer mod selection. Update mods.catalog.json in the repository to change the selected mods.'
 }
-$serverSelection = $null
-if ($ServerProfile) {
-    if ($AdditionalWorkshopId.Count -gt 0) { throw 'With -ServerProfile, add new Workshop items on the server and export a fresh profile first.' }
-    $serverSelection = Read-PZServerProfile $ServerProfile
-    if ($PSBoundParameters.ContainsKey('BuildVersion') -and (ConvertTo-BuildVersion $BuildVersion) -ne (ConvertTo-BuildVersion $serverSelection.BuildVersion)) {
-        throw 'The client -BuildVersion differs from the supplied server profile.'
-    }
-    $BuildVersion = $serverSelection.BuildVersion
-    $runStatus.BuildVersion = $BuildVersion
+if ($Mode -eq 'Client' -and $AdditionalWorkshopId.Count -gt 0) {
+    throw 'Client mode uses only Workshop mappings from the repository catalog. Add dependency mappings to mods.catalog.json and rerun setup.'
 }
 $build = ConvertTo-BuildVersion $BuildVersion
 if ($build.Major -ne 42) { throw 'This catalog is for Build 42 only.' }
@@ -113,57 +104,23 @@ $activeEntries = @($requestedEntries | Where-Object {
     ($Profile -eq 'AllRequested' -or $_.MultiplayerEnabled) -and
     -not $excludedKeys.ContainsKey((ConvertTo-ModKey $_.ModId))
 })
-if ($serverSelection) {
-    $activeEntries = @()
-    $previousId = $null
-    foreach ($mod in $serverSelection.Mods) {
-        $key = ConvertTo-ModKey $mod.ModId
-        $known = $null
-        if ($entryById.ContainsKey($key)) { $known = $entryById[$key] }
-        if ($null -eq $known -and $mod.PSObject.Properties['RequestedId']) {
-            $requestedKey = ConvertTo-ModKey $mod.RequestedId
-            if ($entryById.ContainsKey($requestedKey)) { $known = $entryById[$requestedKey] }
-        }
-        if ($null -ne $known -and [string]$known.WorkshopId -ne [string]$mod.WorkshopId) {
-            throw "Server profile Workshop mapping differs from the catalog for $($mod.ModId). Use the server's current catalog."
-        }
-        $entry = [pscustomobject]@{
-            ModId = [string]$mod.ModId; WorkshopId = [string]$mod.WorkshopId
-            Aliases = @(); Requires = @(); LoadAfter = @(); Priority = $activeEntries.Count
-            MultiplayerEnabled = $true; DisabledReason = ''; Notes = 'Selected by the server profile.'
-            Source = "https://steamcommunity.com/sharedfiles/filedetails/?id=$($mod.WorkshopId)"
-        }
-        if ($null -ne $known) {
-            $entry.Aliases = @(@($known.ModId) + @($known.Aliases) | Where-Object { $_ -ne $entry.ModId } | Select-Object -Unique)
-            $entry.Requires = @($known.Requires)
-            $entry.LoadAfter = @($known.LoadAfter)
-            if ($known.PSObject.Properties['MinBuild']) { $entry | Add-Member -NotePropertyName MinBuild -NotePropertyValue $known.MinBuild }
-        }
-        # Preserve the server's exact order, while still checking current dependency constraints.
-        if ($previousId) { $entry.LoadAfter += $previousId }
-        $activeEntries += $entry
-        $previousId = $entry.ModId
-    }
-}
 if ($activeEntries.Count -eq 0) { throw 'The chosen profile enables no mods.' }
 # Resolve researched dependencies before downloads, including libraries outside the requested list.
-if (-not $serverSelection) {
-    $initialKeys = @{}
-    foreach ($entry in $activeEntries) { $initialKeys[(ConvertTo-ModKey $entry.ModId)] = $true }
-    for ($position = 0; $position -lt $activeEntries.Count; $position++) {
-        foreach ($id in @($activeEntries[$position].Requires)) {
-            $key = ConvertTo-ModKey $id
-            if (-not $entryById.ContainsKey($key)) { throw "Catalog dependency '$id' has no Workshop mapping. Update the catalog before downloading." }
-            $dependency = $entryById[$key]
-            $dependencyKey = ConvertTo-ModKey $dependency.ModId
-            if ($excludedKeys.ContainsKey($dependencyKey)) { throw "Required mod '$($dependency.ModId)' was explicitly excluded." }
-            if ($Profile -eq 'Multiplayer' -and ($requestedHoldbacks.ContainsKey($dependencyKey) -or ($dependency.PSObject.Properties['BlockAutoEnable'] -and $dependency.BlockAutoEnable))) {
-                throw "Required mod '$($dependency.ModId)' is held out of the multiplayer selection. $($dependency.DisabledReason) Review the dependent mod selection."
-            }
-            if (-not $initialKeys.ContainsKey($dependencyKey)) {
-                $activeEntries += $dependency
-                $initialKeys[$dependencyKey] = $true
-            }
+$initialKeys = @{}
+foreach ($entry in $activeEntries) { $initialKeys[(ConvertTo-ModKey $entry.ModId)] = $true }
+for ($position = 0; $position -lt $activeEntries.Count; $position++) {
+    foreach ($id in @($activeEntries[$position].Requires)) {
+        $key = ConvertTo-ModKey $id
+        if (-not $entryById.ContainsKey($key)) { throw "Catalog dependency '$id' has no Workshop mapping. Update the catalog before downloading." }
+        $dependency = $entryById[$key]
+        $dependencyKey = ConvertTo-ModKey $dependency.ModId
+        if ($excludedKeys.ContainsKey($dependencyKey)) { throw "Required mod '$($dependency.ModId)' was explicitly excluded." }
+        if ($Profile -eq 'Multiplayer' -and ($requestedHoldbacks.ContainsKey($dependencyKey) -or ($dependency.PSObject.Properties['BlockAutoEnable'] -and $dependency.BlockAutoEnable))) {
+            throw "Required mod '$($dependency.ModId)' is held out of the multiplayer selection. $($dependency.DisabledReason) Review the dependent mod selection."
+        }
+        if (-not $initialKeys.ContainsKey($dependencyKey)) {
+            $activeEntries += $dependency
+            $initialKeys[$dependencyKey] = $true
         }
     }
 }
@@ -179,20 +136,19 @@ foreach ($conflict in $catalog.Conflicts) {
     if ($present.Count -eq $conflict.ModIds.Count) { throw "Incompatible selection: $($present -join ' + '). $($conflict.Reason) Source: $($conflict.Source)" }
 }
 $workshopIds = @(@($activeEntries | ForEach-Object { [string]$_.WorkshopId }) + $AdditionalWorkshopId | Select-Object -Unique)
-if ($serverSelection) { $workshopIds = @($activeEntries | ForEach-Object { [string]$_.WorkshopId } | Select-Object -Unique) }
 $downloadedWorkshopIds = [Collections.Generic.List[string]]::new()
 foreach ($id in $workshopIds) { $downloadedWorkshopIds.Add($id) }
 $runStatus.BuildVersion = $BuildVersion
 Write-Host "$($requestedEntries.Count) requested mods; $($dependencyEntries.Count) additional dependency entries; $($workshopIds.Count) unique Workshop downloads; $($activeEntries.Count) initially enabled."
 Write-Host "Setup mode: $Mode. Target game build: $BuildVersion."
-if ($Mode -eq 'Client' -and -not $serverSelection) {
-    Write-Host 'Using the catalog multiplayer selection. Supply -ServerProfile server-profile.json to match a specific server configuration.'
+if ($Mode -eq 'Client') {
+    Write-Host 'Using the repository multiplayer mod list from mods.catalog.json.'
 }
-foreach ($entry in $entries | Where-Object { -not $serverSelection -and $_ -notin $activeEntries }) {
+foreach ($entry in $entries | Where-Object { $_ -notin $activeEntries }) {
     $reason = if ($excludedKeys.ContainsKey((ConvertTo-ModKey $entry.ModId))) { 'Excluded by -ExcludeMod.' } else { $entry.DisabledReason }
     Write-Warning "Not enabled in this profile: $($entry.ModId). $reason"
 }
-$planEntries = if ($serverSelection) { $activeEntries } else { $entries }
+$planEntries = $entries
 $planEntries | Select-Object ModId, WorkshopId, @{ Name = 'EnabledInProfile'; Expression = { $_ -in $activeEntries } }, @{ Name = 'WorkshopSelected'; Expression = { [string]$_.WorkshopId -in $workshopIds } }, DisabledReason, Source |
     Export-Csv -LiteralPath (Join-Path $OutputDirectory 'download-plan.csv') -NoTypeInformation -Encoding UTF8
 
@@ -321,7 +277,7 @@ function Add-ActiveEntry {
     $entryKey = ConvertTo-ModKey $Entry.ModId
     if ($selectedKeys.ContainsKey($entryKey)) { return }
     if ($excludedKeys.ContainsKey($entryKey)) { throw "Required mod '$($Entry.ModId)' was explicitly excluded." }
-    if (-not $serverSelection -and $Profile -eq 'Multiplayer' -and ($requestedHoldbacks.ContainsKey($entryKey) -or ($Entry.PSObject.Properties['BlockAutoEnable'] -and $Entry.BlockAutoEnable))) {
+    if ($Profile -eq 'Multiplayer' -and ($requestedHoldbacks.ContainsKey($entryKey) -or ($Entry.PSObject.Properties['BlockAutoEnable'] -and $Entry.BlockAutoEnable))) {
         throw "Required mod '$($Entry.ModId)' is held out of the multiplayer selection. $($Entry.DisabledReason) Review the dependent mod selection."
     }
     if ($PlanOnly) {
@@ -360,9 +316,6 @@ for ($position = 0; $position -lt $records.Count; $position++) {
             $_.Metadata.Key -eq $key -or (ConvertTo-ModKey $_.Entry.ModId) -eq $key -or $key -in @($_.Entry.Aliases | ForEach-Object { ConvertTo-ModKey $_ })
         })
         if ($alreadyActive.Count -gt 0) { continue }
-        if ($serverSelection) {
-            throw "Downloaded requirements differ from the server profile: missing '$id'. Ask the server owner for a fresh profile; no client profile was installed."
-        }
         if ($entryById.ContainsKey($key)) {
             Add-ActiveEntry $entryById[$key]
             Write-Host "Enabled required dependency: $id"
@@ -388,9 +341,6 @@ foreach ($conflict in $catalog.Conflicts) {
 $ordered = @(Get-PZLoadOrder $records.ToArray())
 $modIds = @($ordered | ForEach-Object { $_.Metadata.Id })
 $enabledWorkshopIds = @($ordered | ForEach-Object { $_.Metadata.WorkshopId } | Select-Object -Unique)
-if ($serverSelection -and ($modIds -join ';') -cne (($serverSelection.Mods | ForEach-Object { $_.ModId }) -join ';')) {
-    throw 'Downloaded mods or requirements differ from the server profile. Ask the server owner for a fresh profile; no client profile was installed.'
-}
 $clientProviderScan = $null
 if ($Mode -eq 'Client' -and -not $PlanOnly) {
     $clientWorkshopRoots = if ($SkipDownload) { @($WorkshopContentPath) } else { @($itemDirectories.Values | ForEach-Object { Split-Path -Parent $_ } | Select-Object -Unique) }
@@ -401,9 +351,6 @@ $workshopLine = 'WorkshopItems=' + ($enabledWorkshopIds -join ';')
 $activeRuleIds = @($activeKeys.Keys)
 $requiredServerSettings = Get-PZRequiredServerSettings -Catalog $catalog -ActiveIds $activeRuleIds
 $setupActions = @(Get-PZSetupActions -Catalog $catalog -ActiveIds $activeRuleIds -Mode $Mode)
-if ($serverSelection -and $serverSelection.PSObject.Properties['SetupActions']) {
-    $setupActions = @($serverSelection.SetupActions)
-}
 $suffix = if ($PlanOnly) { '.preview' } else { '' }
 $serverLines = @($modsLine, $workshopLine)
 foreach ($key in @($requiredServerSettings.Keys | Sort-Object)) { $serverLines += "$key=$($requiredServerSettings[$key])" }
@@ -415,7 +362,7 @@ $defaultLines += @('}','','maps','{','}')
 [IO.File]::WriteAllLines((Join-Path $OutputDirectory "default$suffix.txt"), $defaultLines, $utf8)
 $report = [ordered]@{
     ValidatedFromDownloads = (-not $PlanOnly); RuntimeTested = $false; ValidationScope = 'Downloaded metadata and researched catalog constraints; no server/game runtime test.'
-    Mode = $Mode; BuildVersion = $BuildVersion; Profile = $Profile; ServerProfile = $ServerProfile
+    Mode = $Mode; BuildVersion = $BuildVersion; Profile = $Profile; CatalogPath = [IO.Path]::GetFullPath($CatalogPath)
     CatalogVerifiedDate = $catalog.VerifiedDate; DownloadWorkshopIds = @($downloadedWorkshopIds.ToArray())
     RequiredServerSettings = $requiredServerSettings; SetupActions = $setupActions; ClientDuplicateProviderScan = $clientProviderScan
     EnabledMods = @($ordered | ForEach-Object { [ordered]@{ RequestedId = $_.Entry.ModId; ActualId = $_.Metadata.Id; WorkshopId = $_.Metadata.WorkshopId; InfoPaths = $_.Metadata.InfoPaths; Notes = $_.Entry.Notes; Source = $_.Entry.Source } })

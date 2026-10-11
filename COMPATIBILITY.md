@@ -158,7 +158,7 @@ Do not treat the absence of a visible red error counter as proof. Vanilla build 
 - [Retained mods](research/retained-audit.json): focused current constraints for the 111 retained requested entries.
 - [Dependency follow-up](research/extra-dependencies.json) and [new-item sidebar follow-up](research/extra-nonvehicle-dependencies.json): native requirement checks and explicit coverage gaps.
 - [Launcher audit](research/launcher-audit.md): installation prerequisites and what cannot be automated here.
-- [Offline verification](tests/Verify-PZMods.ps1): synthetic Steam/download fixtures, selection/order, backups, failure paths, shared profiles and menu flows.
+- [Offline verification](tests/Verify-PZMods.ps1): synthetic Steam/download fixtures, selection/order, backups, failure paths, exported selection records and menu flows using the repository catalog.
 
 Real Windows double-click dialogs, Steam authentication/native DLL downloads, dedicated-server startup, two-client synchronization and gameplay were **not run** on the macOS development machine. Reports explicitly retain RuntimeTested=false. The checked-in preview has ValidatedFromDownloads=false.
 

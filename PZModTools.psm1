@@ -343,7 +343,7 @@ function Export-PZClientSetup {
         foreach ($file in $files) { Copy-Item -LiteralPath (Join-Path $ProjectDirectory $file) -Destination (Join-Path $temporary $file) }
         Copy-Item -LiteralPath $CatalogPath -Destination (Join-Path $temporary 'mods.catalog.json')
         Copy-Item -LiteralPath $ServerProfile -Destination (Join-Path $temporary 'server-profile.json')
-        $instructions = @('PROJECT ZOMBOID PLAYER SETUP', '', '1. Extract all files from this ZIP into a folder.', '2. Open Steam and install the same game build as the server. Close the game.', '3. Double-click Start-PZModSetup.cmd, choose Player, then Download/update.', '4. Use the included server-profile.json when the menu offers it.', '5. After setup, launch the game. Check texture mods in the main menu and restart if requested.', '6. Join the server using the address/password supplied by the owner.', '', 'The menu retains your existing Steam subscriptions and backs up your default mod profile.', 'The supplied profile checks metadata and load order. It does not prove runtime compatibility.')
+        $instructions = @('PROJECT ZOMBOID PLAYER SETUP', '', '1. Extract all files from this ZIP into a folder.', '2. Open Steam and install the same game build as the server. Close the game.', '3. Double-click Start-PZModSetup.cmd, choose Player, then Download/update.', '4. Enter the game build. Setup automatically uses the repository mod list in mods.catalog.json.', '5. After setup, launch the game. Check texture mods in the main menu and restart if requested.', '6. Join the server using the address/password supplied by the owner.', '', 'The menu retains your existing Steam subscriptions and backs up your default mod profile.', 'Use the same repository catalog revision as the server.', 'The included server-profile.json is a record of the server scan; setup does not import it.', 'Metadata checks do not prove runtime compatibility.')
         [IO.File]::WriteAllLines((Join-Path $temporary 'READ-ME.txt'), $instructions, [Text.UTF8Encoding]::new($false))
         Compress-Archive -Path (Join-Path $temporary '*') -DestinationPath $temporaryZip
         if (Test-Path -LiteralPath $package -PathType Leaf) { [IO.File]::Replace($temporaryZip, [IO.Path]::GetFullPath($package), [IO.Path]::GetFullPath($backupZip)) }
@@ -452,17 +452,38 @@ function Invoke-PZClientWorkshopDownloads {
         } else { $session = & $SessionFactory }
         $directories = @{}
         Write-Host "Subscribing to $($Ids.Count) Workshop items in the signed-in Steam client's account..."
-        foreach ($id in $Ids) { $session.SubscribeItem([uint64]$id) }
         $position = 0
         foreach ($id in $Ids) {
             $position++
             $numericId = [uint64]$id
             $clock = [Diagnostics.Stopwatch]::StartNew()
-            while ($true) {
-                $session.Pump()
-                if (-not $session.SubscriptionPending($numericId) -and ($session.GetItemState($numericId) -band 1) -ne 0) { break }
-                if ($clock.Elapsed.TotalSeconds -ge $TimeoutSeconds) { throw "Steam subscription timed out for Workshop $id." }
-                Start-Sleep -Milliseconds 200
+            $subscribed = $false
+            for ($subscriptionAttempt = 1; $subscriptionAttempt -le $Retries; $subscriptionAttempt++) {
+                # Complete this subscription before submitting the next item's request.
+                $session.SubscribeItem($numericId)
+                $clock.Restart()
+                while ($true) {
+                    $session.Pump()
+                    $subscriptionResult = $session.GetSubscriptionResult($numericId)
+                    if ($subscriptionResult -gt 1) { break }
+                    if (-not $session.SubscriptionPending($numericId) -and ($session.GetItemState($numericId) -band 1) -ne 0) {
+                        $subscribed = $true
+                        break
+                    }
+                    if ($clock.Elapsed.TotalSeconds -ge $TimeoutSeconds) {
+                        throw "Steam subscription timed out for Workshop $id. Keep Steam online and signed in, then rerun setup. No client profile was installed."
+                    }
+                    Write-Progress -Activity 'Installing client Workshop mods through Steam' -Status "Subscribing $position/$($Ids.Count): $id" -PercentComplete (100 * ($position - 1) / $Ids.Count)
+                    Start-Sleep -Milliseconds 200
+                }
+                if ($subscribed) { break }
+                $reason = if ($subscriptionResult -eq 3) { 'Steam has no network connection.' } else { "Steam returned EResult=$subscriptionResult." }
+                # Fail, NoConnection, Busy, Timeout, ServiceUnavailable, RateLimitExceeded.
+                if ($subscriptionResult -notin @(2,3,10,16,20,84) -or $subscriptionAttempt -eq $Retries) {
+                    throw "Steam subscription failed for Workshop $id. $reason Check Steam and the Workshop item, then rerun setup. No client profile was installed."
+                }
+                Write-Warning "Workshop $id subscription failed (Steam EResult=$subscriptionResult), attempt $subscriptionAttempt/$Retries. $reason Retrying..."
+                Start-Sleep -Seconds ([Math]::Min(2 * $subscriptionAttempt, 10))
             }
             $installed = $false
             for ($attempt = 1; $attempt -le $Retries; $attempt++) {

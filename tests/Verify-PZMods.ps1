@@ -47,9 +47,20 @@ class FakeClientSession {
     [bool]$PendingForever
     [int]$DownloadResult
     [int]$PumpCount
+    [int]$SubscriptionFailuresRemaining
+    [int]$SubscriptionFailureCode = 3
+    [int]$SubscriptionResult = 1
     FakeClientSession([hashtable]$Directories) { $this.Directories = $Directories }
-    [void]SubscribeItem([uint64]$Id) { $this.Subscribed.Add($Id) }
+    [void]SubscribeItem([uint64]$Id) {
+        $this.Subscribed.Add($Id)
+        $this.SubscriptionResult = 1
+        if ($this.SubscriptionFailuresRemaining -gt 0) {
+            $this.SubscriptionFailuresRemaining--
+            $this.SubscriptionResult = $this.SubscriptionFailureCode
+        }
+    }
     [bool]SubscriptionPending([uint64]$Id) { return $this.PendingForever }
+    [int]GetSubscriptionResult([uint64]$Id) { return $this.SubscriptionResult }
     [uint32]GetItemState([uint64]$Id) {
         if ($Id -eq 111 -or $this.DownloadResult -eq 1) { return 5 }
         # Leave a cached, installed folder after an error to ensure it never hides that error.
@@ -200,7 +211,7 @@ try {
     Assert-True ('RenamedAddon' -in $scanOrder -and 'OldAddon' -notin $scanOrder) 'Output uses actual downloaded submod IDs.'
     Assert-True ([IO.File]::ReadAllText($scanIni).Contains('WorkshopItems=111;222')) 'Server INI contains only unique enabled Workshop IDs.'
 
-    # Shared server profile round trip into a client setup, using existing Workshop fixtures.
+    # Export selection records and package the repository catalog for client setup.
     $sharePath = Join-Path $temporary 'scan/server-profile.json'
     $shared = Read-PZServerProfile $sharePath
     Assert-True (($shared.Mods.ModId -join ';') -ceq ($scanOrder -join ';')) 'The server exports exact downloaded IDs and load order for clients.'
@@ -271,7 +282,7 @@ try {
     $unrelatedLocal = Write-Fixture 'client-data/mods/Unrelated/42/mod.info' "id=UnrelatedLocal`n"
     Write-Fixture 'content/997/mods/InapplicableDuplicate/42/mod.info' "id=Main`nversionMin=42.22`n" | Out-Null
     Write-Fixture 'content/998/mods/Malformed/42/mod.info' "name=Unrelated malformed fixture`n" | Out-Null
-    $clientParameters = @{ Mode='Client'; CatalogPath=$fixtureCatalogPath; ServerProfile=$sharePath; SkipDownload=$true; WorkshopContentPath=(Join-Path $temporary 'content'); OutputDirectory=(Join-Path $temporary 'client-output'); ClientDataDirectory=(Join-Path $temporary 'client-data') }
+    $clientParameters = @{ Mode='Client'; CatalogPath=$fixtureCatalogPath; SkipDownload=$true; WorkshopContentPath=(Join-Path $temporary 'content'); OutputDirectory=(Join-Path $temporary 'client-output'); ClientDataDirectory=(Join-Path $temporary 'client-data') }
     $providerWarnings = @()
     & (Join-Path $root 'Download-PZMods.ps1') @clientParameters -WarningVariable providerWarnings
     $clientReport = Get-Content -LiteralPath (Join-Path $temporary 'client-output/validation.json') -Raw | ConvertFrom-Json
@@ -296,14 +307,14 @@ try {
     Assert-Throws { & (Join-Path $root 'Download-PZMods.ps1') @duplicateParameters } 'RenamedAddon.*local mod'
     Assert-True ([IO.File]::ReadAllText($clientExisting) -ceq $profileBeforePreview -and (Test-Path -LiteralPath $duplicateLocal)) 'A local copy of an actual selected mod ID blocks preset overwrite without deleting the local copy.'
     Remove-Item -LiteralPath (Join-Path $temporary 'client-data/mods/LocalCopy') -Recurse -Force
-    & (Join-Path $root 'Download-PZMods.ps1') -Mode Client -PlanOnly -CatalogPath $fixtureCatalogPath -ServerProfile $sharePath -ClientDataDirectory (Join-Path $temporary 'client-data') -OutputDirectory (Join-Path $temporary 'client-preview')
+    & (Join-Path $root 'Download-PZMods.ps1') -Mode Client -PlanOnly -CatalogPath $fixtureCatalogPath -ClientDataDirectory (Join-Path $temporary 'client-data') -OutputDirectory (Join-Path $temporary 'client-preview')
     Assert-True ([IO.File]::ReadAllText($clientExisting) -ceq $profileBeforePreview) 'Client preview never overwrites the installed profile.'
-    Assert-Throws { & (Join-Path $root 'Download-PZMods.ps1') @clientParameters -BuildVersion 42.20.0 } 'differs from'
+    Assert-Throws { & (Join-Path $root 'Download-PZMods.ps1') @clientParameters -BuildVersion 41.78.16 } 'Build 42 only'
     Assert-Throws { & (Join-Path $root 'Download-PZMods.ps1') @clientParameters -ServerIni $scanIni } 'only available in Server'
     Assert-Throws { & (Join-Path $root 'Download-PZMods.ps1') @clientParameters -ExcludeMod Main } 'Client mode uses'
-    $missingDependencyProfile = Write-Fixture 'incomplete-server-profile.json' (@{ SchemaVersion=1; AppId='108600'; ValidatedFromDownloads=$true; BuildVersion='42.21.0'; Mods=@(@{ModId='Main';WorkshopId='111'}) } | ConvertTo-Json -Depth 8)
-    Assert-Throws { & (Join-Path $root 'Download-PZMods.ps1') -Mode Client -ServerProfile $missingDependencyProfile -CatalogPath $fixtureCatalogPath -SkipDownload -WorkshopContentPath (Join-Path $temporary 'content') -ClientDataDirectory (Join-Path $temporary 'client-data') -OutputDirectory (Join-Path $temporary 'client-mismatch') } 'differ from the server profile'
-    Assert-True ([IO.File]::ReadAllText($clientExisting) -ceq $profileBeforePreview) 'Server profile mismatch leaves the client profile untouched.'
+    Assert-Throws { & (Join-Path $root 'Download-PZMods.ps1') @clientParameters -ServerProfile $sharePath } 'parameter.*ServerProfile'
+    Assert-Throws { & (Join-Path $root 'Download-PZMods.ps1') @clientParameters -AdditionalWorkshopId 999 } 'repository catalog'
+    Assert-True ([IO.File]::ReadAllText($clientExisting) -ceq $profileBeforePreview) 'Rejected external selection inputs leave the client profile untouched.'
 
     # Exercise the interactive menu with queued answers and the actual offline backend.
     & {
@@ -314,7 +325,7 @@ try {
             Copy-Item -LiteralPath (Join-Path $root $file) -Destination (Join-Path $wizardRoot $file)
         }
         Copy-Item -LiteralPath $fixtureCatalogPath -Destination (Join-Path $wizardRoot 'mods.catalog.json')
-        Copy-Item -LiteralPath $sharePath -Destination (Join-Path $wizardRoot 'server-profile.json')
+        Write-Fixture 'wizard project/server-profile.json' (@{ SchemaVersion=1; AppId='108600'; ValidatedFromDownloads=$true; BuildVersion='42.20.0'; Mods=@(@{ModId='ForeignMod';WorkshopId='999'}) } | ConvertTo-Json -Depth 8) | Out-Null
         $script:PZSetupRoot = $wizardRoot
         $answers = [Collections.Generic.Queue[string]]::new()
         $script:PZSetupInputReader = {
@@ -328,10 +339,10 @@ try {
         Assert-True ($answers.Count -eq 0 -and $wizardPreview.Status -eq 'preview' -and $wizardPreview.Mode -eq 'Server') 'The server menu validates a build entry and completes a preview through the real backend.'
         Assert-True (-not (Test-Path -LiteralPath (Join-Path $wizardRoot 'output/server-mods.ini'))) 'The preview menu cannot create validated server settings.'
 
-        foreach ($answer in @('1','3','1','1','0')) { $answers.Enqueue($answer) }
+        foreach ($answer in @('1','3','','1','0')) { $answers.Enqueue($answer) }
         Start-PZSetupMenu
         $wizardClient = Get-Content -LiteralPath (Join-Path $wizardRoot 'output/preview/client/validation.preview.json') -Raw | ConvertFrom-Json
-        Assert-True ($answers.Count -eq 0 -and ($wizardClient.EnabledMods.ActualId -join ';') -ceq ($scanOrder -join ';') -and -not $wizardClient.ValidatedFromDownloads) 'The player menu finds the shared server profile and previews its exact mod order.'
+        Assert-True ($answers.Count -eq 0 -and ($wizardClient.EnabledMods.ActualId -join ';') -ceq 'Main;OldAddon' -and $wizardClient.BuildVersion -eq '42.21.0' -and $wizardClient.CatalogPath -eq (Join-Path $wizardRoot 'mods.catalog.json') -and -not $wizardClient.ValidatedFromDownloads) 'The player menu uses the repository catalog without a selection prompt and ignores a conflicting server-profile.json.'
 
         # The Existing action must scan the chosen content folder and apply only the selected INI.
         $wizardContent = Join-Path $wizardRoot 'steamcmd/steamapps/workshop/content/108600'
@@ -350,13 +361,13 @@ try {
         Assert-True ($pickedPath -eq $pathWithSpaces -and $answers.Count -eq 0) 'Typed file paths can be quoted and contain spaces.'
 
         $script:PZSetupRoot = Join-Path $temporary 'cancelled-wizard'
-        foreach ($answer in @('1','3','0','0')) { $answers.Enqueue($answer) }
+        foreach ($answer in @('1','3','q','0')) { $answers.Enqueue($answer) }
         Start-PZSetupMenu
         Assert-True ($answers.Count -eq 0 -and -not (Test-Path -LiteralPath $script:PZSetupRoot)) 'Back exits a setup step without creating any files.'
 
         # Deliberately omit a catalog: the error should return to the menu, then allow Exit.
         $script:PZSetupRoot = Join-Path $temporary 'broken-wizard'
-        foreach ($answer in @('1','3','2','','1','','0')) { $answers.Enqueue($answer) }
+        foreach ($answer in @('1','3','','1','','0')) { $answers.Enqueue($answer) }
         Start-PZSetupMenu
         Assert-True ($answers.Count -eq 0 -and -not (Test-Path -LiteralPath $script:PZSetupRoot)) 'Setup errors stay visible and return to the menu instead of closing the window.'
         foreach ($answer in @('4','','0')) { $answers.Enqueue($answer) }
@@ -379,6 +390,20 @@ try {
     $fakePending.PendingForever = $true
     Assert-Throws { Invoke-PZClientWorkshopDownloads -Ids @('222') -TimeoutSeconds 1 -SessionFactory { $fakePending }.GetNewClosure() } 'subscription timed out'
     Assert-True ($fakePending.Disposed) 'Client subscription timeout cleans up the Steam session.'
+
+    $fakeReconnect = [FakeClientSession]::new(@{ '111'=(Join-Path $temporary 'content/111') })
+    $fakeReconnect.SubscriptionFailuresRemaining = 1
+    $reconnectedPaths = Invoke-PZClientWorkshopDownloads -Ids @('111') -Retries 2 -TimeoutSeconds 1 -SessionFactory { $fakeReconnect }.GetNewClosure()
+    Assert-True ($reconnectedPaths.Count -eq 1 -and $fakeReconnect.Subscribed.Count -eq 2 -and $fakeReconnect.Downloads.Count -eq 0 -and $fakeReconnect.Disposed) 'A temporary NoConnection subscription result retries and recovers without redownloading an up-to-date item.'
+    $fakeDisconnected = [FakeClientSession]::new(@{ '111'=(Join-Path $temporary 'content/111') })
+    $fakeDisconnected.SubscriptionFailuresRemaining = 3
+    Assert-Throws { Invoke-PZClientWorkshopDownloads -Ids @('111','222') -Retries 2 -TimeoutSeconds 1 -SessionFactory { $fakeDisconnected }.GetNewClosure() } 'Steam subscription failed.*no network connection'
+    Assert-True ($fakeDisconnected.Subscribed.Count -eq 2 -and @($fakeDisconnected.Subscribed | Where-Object { $_ -eq 222 }).Count -eq 0 -and $fakeDisconnected.Downloads.Count -eq 0 -and $fakeDisconnected.Disposed) 'Persistent connection failure stops after bounded retries, rejects cached item state, and does not submit later subscriptions.'
+    $fakeDenied = [FakeClientSession]::new(@{ '111'=(Join-Path $temporary 'content/111') })
+    $fakeDenied.SubscriptionFailuresRemaining = 3
+    $fakeDenied.SubscriptionFailureCode = 15
+    Assert-Throws { Invoke-PZClientWorkshopDownloads -Ids @('111') -Retries 3 -TimeoutSeconds 1 -SessionFactory { $fakeDenied }.GetNewClosure() } 'Steam subscription failed.*EResult=15'
+    Assert-True ($fakeDenied.Subscribed.Count -eq 1 -and $fakeDenied.Downloads.Count -eq 0 -and $fakeDenied.Disposed) 'AccessDenied is reported immediately without unnecessary retries or downloads.'
 
     $beforeFailure = [IO.File]::ReadAllText($scanIni)
     Assert-Throws { & (Join-Path $root 'Download-PZMods.ps1') @scanParameters -ExcludeMod Library } 'explicitly excluded'

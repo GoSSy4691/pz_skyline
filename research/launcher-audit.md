@@ -8,7 +8,7 @@ Players must already have Steam installed, running and signed in, the same game 
 
 Owners must have the correct server game installed and stopped, select its existing INI or choose generated settings only, authenticate when SteamCMD asks, and restart the server afterwards. Generated settings only requires applying `server-mods.ini` manually. This tool does not install/start the server, change the Steam game version, configure network reachability, or choose sandbox options.
 
-Distribute the generated `player-setup.zip` with the exact checked `server-profile.json`. Without that profile, players only match the default catalog selection; a customized server can differ. The shared profile requires downloaded IDs and active order to match.
+Player setup uses the repository's `mods.catalog.json` directly. Distribute the same Git revision or a `player-setup.zip` containing that catalog. The exported `server-profile.json` is a scan record and is not imported by player setup. Selection changes intended for both server and players belong in the repository catalog.
 
 The checks protect against missing B42 variants, declared build bounds, dependencies, duplicate active IDs, declared conflicts, and load-order cycles. Reports say runtime-tested=false. They cannot prove every Lua action, animation, synchronization path, balance combination, or performance condition. A fresh dedicated test world, two clients, reconnects and log review remain necessary.
 
@@ -20,7 +20,7 @@ Possible additional game steps identified by primary author sources:
 
 Implementation findings shared with root:
 
-- Use active Workshop items plus required dependencies for the default download list; separate disabled/replaced sources can leave duplicate ModIds installed. Shared-profile downloads already use active items.
+- Use active Workshop items plus required dependencies for the repository download list; separate disabled/replaced sources can leave duplicate ModIds installed.
 - Read custom common/mod.info rules separately from version game metadata. The sorter author names custom `loadAfter`, `loadBefore`, `incompatibleMods`, `loadFirst`, `loadLast`, and native version `loadModAfter`, `loadModBefore`, `incompatible`. Category first/last cannot safely be treated as global without category support. [Sorter author](https://steamcommunity.com/workshop/filedetails/discussion/3423660713/592888629473368243/).
 - The guide author's direct loader inspection says version mod.info wins wholesale, with common metadata only as fallback. A common id, requirement or build bound must not be inherited when version metadata exists. Common sorter extensions can still be read separately. [Loader inspection](https://steamcommunity.com/sharedfiles/filedetails/?id=3776551449).
 - Target-build input validates mod metadata; it does not inspect/change the installed game's Steam branch.

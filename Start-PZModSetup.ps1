@@ -135,37 +135,6 @@ function Select-PZSetupPath {
     }
 }
 
-function Get-PZSetupServerProfiles {
-    $seen = @{}
-    foreach ($path in @((Join-Path $script:PZSetupRoot 'server-profile.json'), (Join-Path $script:PZSetupRoot 'output/server-profile.json'))) {
-        if (-not (Test-Path -LiteralPath $path -PathType Leaf) -or $seen.ContainsKey($path)) { continue }
-        try {
-            $profile = Read-PZServerProfile $path
-            $seen[$path] = $true
-            [pscustomobject]@{ Path = $path; Build = $profile.BuildVersion; ModCount = @($profile.Mods).Count }
-        } catch { Write-Host "  Skipping an invalid server profile: $path" -ForegroundColor Yellow }
-    }
-}
-
-function Select-PZSetupServerProfile {
-    $profiles = @(Get-PZSetupServerProfiles)
-    $items = @($profiles | ForEach-Object { "Use $($_.Path)  ($($_.ModCount) mods, build $($_.Build))" })
-    $items += @('Choose the server mod list sent by the owner', 'Use the included multiplayer mod list')
-    $choice = Read-PZSetupChoice -Items $items
-    if ($choice -eq 0) { Stop-PZSetupStep }
-    if ($choice -le $profiles.Count) { return $profiles[$choice - 1].Path }
-    if ($choice -eq $profiles.Count + 1) {
-        while ($true) {
-            $path = Select-PZSetupPath -Label 'Select server-profile.json' -Kind File -Filter 'Server mod list (*.json)|*.json'
-            try { Read-PZServerProfile $path | Out-Null; return $path } catch {
-                Write-Host '  This is not a checked server mod list. Ask the owner for server-profile.json.' -ForegroundColor Yellow
-            }
-        }
-    }
-    Write-Host '  This uses the included list. Your server must use the same selection.' -ForegroundColor Yellow
-    return $null
-}
-
 function Select-PZSetupServerIni {
     $directory = Join-Path ([Environment]::GetFolderPath('UserProfile')) 'Zomboid/Server'
     $files = @(if (Test-Path -LiteralPath $directory -PathType Container) { Get-ChildItem -LiteralPath $directory -Filter '*.ini' -File | Sort-Object Name })
@@ -192,9 +161,8 @@ function Get-PZSetupParameters {
     }
     Show-PZSetupScreen -Title "$Mode setup / choose mods" -Description 'Use 0 in menus or Q in text prompts to go back.'
     if ($Mode -eq 'Client') {
-        $profilePath = Select-PZSetupServerProfile
-        if ($profilePath) { $parameters.ServerProfile = $profilePath }
-        else { $parameters.BuildVersion = Read-PZSetupBuild }
+        Write-Host '  Using the mod list from this repository: mods.catalog.json.' -ForegroundColor Cyan
+        $parameters.BuildVersion = Read-PZSetupBuild
         $parameters.ClientDataDirectory = Join-Path ([Environment]::GetFolderPath('UserProfile')) 'Zomboid'
         if ($Action -eq 'Download') {
             Write-Host ''
@@ -247,21 +215,18 @@ function Get-PZSetupParameters {
 function Show-PZSetupSummary {
     param([hashtable]$Parameters, [string]$Action)
     Show-PZSetupScreen -Title 'Ready to start' -Description 'Review your setup below.'
-    $build = if ($Parameters.ContainsKey('ServerProfile')) { (Read-PZServerProfile $Parameters.ServerProfile).BuildVersion } else { $Parameters.BuildVersion }
+    $build = $Parameters.BuildVersion
     Write-Host "  Setup:       $($Parameters.Mode)" -ForegroundColor White
     Write-Host "  Target build: $build" -ForegroundColor White
     $actionLabel = switch ($Action) { Download { 'Download/update mods and set up' }; Existing { 'Check existing mods and set up' }; Preview { 'Preview only; no downloads or profile installation' } }
     Write-Host "  Action:      $actionLabel" -ForegroundColor White
-    if ($Parameters.ContainsKey('ServerProfile')) { Write-Host "  Mod list:    $($Parameters.ServerProfile)" -ForegroundColor Gray }
-    else {
-        Write-Host '  Mod list:    Included multiplayer selection' -ForegroundColor Gray
-        if (Test-Path -LiteralPath $Parameters.CatalogPath -PathType Leaf) {
-            $catalog = Get-Content -LiteralPath $Parameters.CatalogPath -Raw | ConvertFrom-Json
-            $enabled = @($catalog.Mods | Where-Object { $_.MultiplayerEnabled })
-            $disabled = @($catalog.Mods | Where-Object { -not $_.MultiplayerEnabled })
-            Write-Host "  Mods:        $($catalog.Mods.Count) requested; $($enabled.Count) selected, plus required libraries" -ForegroundColor Gray
-            Write-Host "  Held back:   $($disabled.Count) requested mods; reasons are available in menu 3 and the report" -ForegroundColor Yellow
-        }
+    Write-Host '  Mod list:    Repository multiplayer selection (mods.catalog.json)' -ForegroundColor Gray
+    if (Test-Path -LiteralPath $Parameters.CatalogPath -PathType Leaf) {
+        $catalog = Get-Content -LiteralPath $Parameters.CatalogPath -Raw | ConvertFrom-Json
+        $enabled = @($catalog.Mods | Where-Object { $_.MultiplayerEnabled })
+        $disabled = @($catalog.Mods | Where-Object { -not $_.MultiplayerEnabled })
+        Write-Host "  Mods:        $($catalog.Mods.Count) requested; $($enabled.Count) selected, plus required libraries" -ForegroundColor Gray
+        Write-Host "  Held back:   $($disabled.Count) requested mods; reasons are available in menu 3 and the report" -ForegroundColor Yellow
     }
     $labels = [ordered]@{ GameDirectory = 'Game folder'; SteamCmdDirectory = 'Download folder'; WorkshopContentPath = 'Existing mods'; ServerIni = 'Server settings'; ClientDataDirectory = 'Game profile folder' }
     foreach ($key in $labels.Keys) {
@@ -297,7 +262,7 @@ function Show-PZSetupResult {
     Show-PZSetupScreen -Title 'Setup complete' -Description 'Your results are ready.' -KeepOutput
     if ($Action -eq 'Preview') { Write-Host '  Preview created. Downloads and live settings were not changed.' -ForegroundColor Green }
     elseif ($Parameters.Mode -eq 'Client') {
-        Write-Host '  Your server mod profile is installed.' -ForegroundColor Green
+        Write-Host '  Your repository mod profile is installed.' -ForegroundColor Green
         Write-Host '  Check texture mods in the game menu, restart if needed, then join.' -ForegroundColor Gray
     } else {
         Write-Host '  Server mod metadata checked and settings generated.' -ForegroundColor Green
@@ -327,7 +292,7 @@ function Show-PZSetupResult {
 }
 
 function Show-PZSetupModList {
-    Show-PZSetupScreen -Title 'Included mod list' -Description 'This is the catalog selection. A shared server profile can select a different list.'
+    Show-PZSetupScreen -Title 'Included mod list' -Description 'This is the mod selection from this repository.'
     $catalog = Get-Content -LiteralPath (Join-Path $script:PZSetupRoot 'mods.catalog.json') -Raw | ConvertFrom-Json
     $enabled = @($catalog.Mods | Where-Object { $_.MultiplayerEnabled })
     Write-Host "  $($enabled.Count) selected mods / $(@($enabled.WorkshopId | Select-Object -Unique).Count) selected Workshop items, plus required libraries" -ForegroundColor Cyan
@@ -348,7 +313,8 @@ function Show-PZSetupHelp {
     Write-Host '  PLAYERS' -ForegroundColor Cyan
     Write-Host '  Open Steam, sign in, install the same game build as the server,' -ForegroundColor Gray
     Write-Host '  and close the game. Choose Player, then Download/update.' -ForegroundColor Gray
-    Write-Host '  Use server-profile.json from the owner to match the server.' -ForegroundColor Gray
+    Write-Host '  Setup uses mods.catalog.json from this repository.' -ForegroundColor Gray
+    Write-Host '  Use the same repository mod selection as the server.' -ForegroundColor Gray
     Write-Host '  Other subscriptions stay installed; the new profile enables' -ForegroundColor Gray
     Write-Host '  only the selected mods. The old profile is backed up.' -ForegroundColor Gray
     Write-Host '  Remove obsolete copies if setup reports duplicate mod IDs.' -ForegroundColor Yellow

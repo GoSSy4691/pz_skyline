@@ -68,6 +68,7 @@ namespace PZModTools
         private Download download;
         private InstallInfo installInfo;
         private readonly Dictionary<ulong, ulong> subscriptions = new Dictionary<ulong, ulong>();
+        private readonly Dictionary<ulong, int> subscriptionResults = new Dictionary<ulong, int>();
         private readonly Dictionary<ulong, int> downloadResults = new Dictionary<ulong, int>();
 
         private T Function<T>(string name) where T : class
@@ -127,13 +128,23 @@ namespace PZModTools
 
         public void SubscribeItem(ulong id)
         {
-            if ((GetItemState(id) & 1) != 0) return;
+            if (SubscriptionPending(id)) return;
+            int previousResult;
+            bool retryingFailure = subscriptionResults.TryGetValue(id, out previousResult) && previousResult > 1;
+            subscriptionResults.Remove(id);
+            if (!retryingFailure && (GetItemState(id) & 1) != 0) return;
             ulong call = subscribe(ugc, id);
-            if (call == 0) throw new InvalidOperationException("Steam rejected subscription for Workshop " + id + ".");
+            if (call == 0) { subscriptionResults[id] = 2; return; }
             subscriptions[call] = id;
         }
 
         public bool SubscriptionPending(ulong id) { return subscriptions.ContainsValue(id); }
+        // Keep item failures out of Pump so the caller can retry temporary errors.
+        public int GetSubscriptionResult(ulong id)
+        {
+            int result;
+            return subscriptionResults.TryGetValue(id, out result) ? result : 0;
+        }
         public uint GetItemState(ulong id) { return itemState(ugc, id); }
 
         public bool DownloadItem(ulong id)
@@ -174,16 +185,20 @@ namespace PZModTools
                         if (!subscriptions.TryGetValue(completed.Call, out id)) continue;
                         if (completed.Callback != 1313 || completed.Size != Marshal.SizeOf(typeof(SubscriptionResult)))
                             throw new InvalidOperationException("Unexpected Steam subscription response for " + id + ".");
+                        subscriptions.Remove(completed.Call);
                         IntPtr data = Marshal.AllocHGlobal((int)completed.Size);
                         try
                         {
                             bool failed;
                             if (!callResult(pipe, completed.Call, data, (int)completed.Size, 1313, out failed) || failed)
-                                throw new InvalidOperationException("Steam subscription failed for Workshop " + id + ".");
+                            {
+                                subscriptionResults[id] = 2; // Generic failure when no valid result was returned.
+                                continue;
+                            }
                             SubscriptionResult result = (SubscriptionResult)Marshal.PtrToStructure(data, typeof(SubscriptionResult));
-                            if (result.Id != id || result.Result != 1)
-                                throw new InvalidOperationException("Steam subscription failed for Workshop " + id + " (EResult=" + result.Result + ").");
-                            subscriptions.Remove(completed.Call);
+                            if (result.Id != id)
+                                throw new InvalidOperationException("Unexpected Steam subscription item ID for " + id + ".");
+                            subscriptionResults[id] = result.Result;
                         }
                         finally { Marshal.FreeHGlobal(data); }
                     }
