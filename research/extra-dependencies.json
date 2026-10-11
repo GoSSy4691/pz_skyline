@@ -1,0 +1,221 @@
+{
+  "CheckedDate": "2026-10-11",
+  "TargetBuild": "42.21.0",
+  "Scope": "Retained 111 requested entries; focused Workshop required-item and public author metadata gap check",
+  "NewExternalDependencies": [],
+  "ModUpdates": [
+    {
+      "ModId": "ChuckleberryFinnAlertSystem",
+      "Requires": [],
+      "LoadAfter": [],
+      "MinBuild": "42.15.0",
+      "Reason": "Its author-published B42 metadata has no require= line. Workshop Required Items lists errorMagnifier, but that is an installation co-requirement and must not create a reverse ordering edge.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3077900375",
+      "MetadataSource": "https://raw.githubusercontent.com/Chuckleberry-Finn/moddingAlertSystem/main/Contents/mods/chuckleberryModdingAlertSystem/42.0/mod.info"
+    },
+    {
+      "ModId": "errorMagnifier",
+      "Requires": [
+        "ChuckleberryFinnAlertSystem"
+      ],
+      "MinBuild": "42.20.0",
+      "Reason": "Its author-published 42.20 metadata requires ChuckleberryFinnAlertSystem. Keeping MUAS statically after this mod creates a real cycle when downloaded rules are included.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2896041179",
+      "MetadataSource": "https://raw.githubusercontent.com/Chuckleberry-Finn/errorMagnifier/main/Contents/mods/errorMagnifier/42.20/mod.info"
+    }
+  ],
+  "CheckedCombinations": [
+    {
+      "ModIds": [
+        "VanillaOutfitsExpanded"
+      ],
+      "RequiredItems": [],
+      "Finding": "Current clothing author page contains no Required Items section and no MUAS dependency. Do not invent one from unrelated ModManager text.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3783094058"
+    },
+    {
+      "ModIds": [
+        "ModManager"
+      ],
+      "RequiredItems": [
+        "ModLoadOrderSorter_b42"
+      ],
+      "Finding": "Workshop requirement is the sorter, which is already present. The description discusses interaction with MUAS, already present as ChuckleberryFinnAlertSystem.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3567084868"
+    },
+    {
+      "ModIds": [
+        "Neat_Crafting_AddonXP"
+      ],
+      "RequiredItems": [
+        "NeatUI_Framework",
+        "Neat_Crafting"
+      ],
+      "Finding": "Workshop lists both Crafting and Building because it includes two separate optional addon variants. The author explicitly permits crafting addon with only framework + crafting; do not force Neat_Building full variant for crafting addon.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3540503606"
+    },
+    {
+      "ModIds": [
+        "Neat_Building_UIOnly"
+      ],
+      "RequiredItems": [
+        "NeatUI_Framework"
+      ],
+      "Finding": "Author explicitly says UI Only does not add construction entities and does not require Safe Uninstall Support.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3536052310"
+    },
+    {
+      "ModIds": [
+        "Project_Cook",
+        "Project_Cook_Pixel_Icon_Pack"
+      ],
+      "RequiredItems": [
+        "NeatUI_Framework"
+      ],
+      "Finding": "Framework already present; icon pack base relationship already covered.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3490188370"
+    },
+    {
+      "ModIds": [
+        "ShelterHold_Beehive",
+        "TheShortcut",
+        "ModernStatus",
+        "NeatLockpicking",
+        "CleanUI",
+        "Neat_Crafting"
+      ],
+      "RequiredItems": [
+        "NeatUI_Framework"
+      ],
+      "Finding": "Shared framework requirements already covered by the requested list.",
+      "Sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3596827035",
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3470659758",
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3451167732",
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3783535220",
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3437629766",
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3502080466"
+      ]
+    },
+    {
+      "ModIds": [
+        "TakeABathAndShowerNew"
+      ],
+      "RequiredItems": [],
+      "Finding": "Moodle Framework and Bath Towels Overhaul are explicitly optional recommendations. Do not automatically add either as a mandatory library.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592172476"
+    },
+    {
+      "ModIds": [
+        "LongTermPreservationExtended"
+      ],
+      "RequiredItems": [],
+      "Finding": "BasicsUtilities and Jarred Food Spoilage Adjuster are explicitly optional. Requested VFX addon/base dependencies remain covered.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3597673472"
+    },
+    {
+      "ModIds": [
+        "Tuna_EquipmentRacks"
+      ],
+      "RequiredItems": [
+        "Tuna_GunRacks"
+      ],
+      "Finding": "Existing requested framework is mandatory and has now been recorded in retained audit.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3793403177"
+    },
+    {
+      "ModIds": [
+        "autotsartrailers",
+        "amclub",
+        "ATA_Bus"
+      ],
+      "RequiredItems": [
+        "tsarslib"
+      ],
+      "Finding": "Required Tsar Common Library B42 Workshop item 3402491515 is already present.",
+      "Sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3402493701",
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3404737883",
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3402812859"
+      ]
+    },
+    {
+      "ModIds": [
+        "SpnCloth",
+        "SpnOpenCloth"
+      ],
+      "RequiredItems": [
+        "SpnOpenClothBase"
+      ],
+      "Finding": "Open Jackets Workshop item 2812326159 is already present. Opened hoodies' optional FH dependency is disabled by the default profile.",
+      "Sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=2684285534",
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=2812326159"
+      ]
+    },
+    {
+      "ModIds": [
+        "RepairableWindows"
+      ],
+      "RequiredItems": [
+        "StarlitLibrary"
+      ],
+      "Finding": "Required Starlit Workshop item 3378285185 is already present.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3378304610"
+    },
+    {
+      "ModIds": [
+        "MoreDamagedObjects"
+      ],
+      "RequiredItems": [],
+      "Finding": "Description credits Starlit Library; Starlit is already requested. No additional external library is identified by the author page.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3413150945"
+    },
+    {
+      "ModIds": [
+        "CleanHotBar"
+      ],
+      "RequiredItems": [],
+      "Finding": "Author explicitly says NeatUI is compatible but not required; no framework dependency.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3461263912"
+    },
+    {
+      "ModIds": [
+        "Bandits2"
+      ],
+      "RequiredItems": [],
+      "Finding": "Bandit Creator is optional customization in the current B42 author description, rather than a missing hard dependency.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3268487204"
+    },
+    {
+      "ModIds": [
+        "CVI",
+        "ItemArrange",
+        "RealisticDash",
+        "UsefulPallets"
+      ],
+      "RequiredItems": [],
+      "Finding": "Current author pages showed no separate Required Items section. This does not override any newer downloaded mod.info requirements.",
+      "Sources": [
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3749026793",
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3767639280",
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3635591071",
+        "https://steamcommunity.com/sharedfiles/filedetails/?id=3813053718"
+      ]
+    }
+  ],
+  "AdditionalCompatibilityNote": {
+    "ModIds": [
+      "RealisticDash",
+      "amclub"
+    ],
+    "Classification": "author-documented-soft-incompatibility",
+    "Finding": "Current RealisticDash description lists a soft incompatibility with Autotsar Motorclub when riding bikes; inspect dashboard behavior in the two-client test.",
+    "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3635591071"
+  },
+  "Limitations": [
+    "Not an exhaustive proof of every current Workshop requirement: some Steam page variants returned request-limit or cache errors, and downloaded metadata remains authoritative.",
+    "Workshop Required Items can include all optional variants of a package and mutual installation relationships. Treating every such link as a directional load-order edge is incorrect.",
+    "No new external Workshop ID/ModId pair was added without primary author verification."
+  ]
+}

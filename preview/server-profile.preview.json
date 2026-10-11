@@ -1,0 +1,1338 @@
+{
+  "SchemaVersion": 1,
+  "AppId": "108600",
+  "ValidatedFromDownloads": false,
+  "BuildVersion": "42.21.0",
+  "RuntimeTested": false,
+  "SetupActions": [
+    {
+      "Audience": "Client",
+      "ModIds": [
+        "BarricadedWorld"
+      ],
+      "Text": "If you used the original pack, unsubscribe from old Barricaded World Workshop item 2696986935 and remove any remaining copy before using continuation 3529472651. Both provide BarricadedWorld; an enabled-ID preset cannot distinguish them. Other unrelated subscriptions can stay.",
+      "Source": "https://raw.githubusercontent.com/Terrahop/zomboid-barricadedworld/main/mod/42/mod.info"
+    },
+    {
+      "Audience": "Client",
+      "ModIds": [
+        "SPNCC",
+        "TombBody",
+        "TombBodyCompat",
+        "SpnHair"
+      ],
+      "Text": "Start the game after setup with these mods enabled in the main-menu Mods profile. Fully exit and restart if the game requests a restart; body, hair, and clothing models must load before joining.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3429790870"
+    },
+    {
+      "Audience": "Client",
+      "ModIds": [
+        "MiniHealthPanel"
+      ],
+      "Text": "If the MiniHealthPanel update notice cannot close, temporarily disable NeatUI mods, close the notice once, then restore this server profile and restart.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2866258937"
+    }
+  ],
+  "Mods": [
+    {
+      "ModId": "ETO_B",
+      "RequestedId": "ETO_B",
+      "WorkshopId": "3119788162"
+    },
+    {
+      "ModId": "ATakeABathAndShowerDepthMap",
+      "RequestedId": "ATakeABathAndShowerDepthMap",
+      "WorkshopId": "3592172476"
+    },
+    {
+      "ModId": "ChuckleberryFinnAlertSystem",
+      "RequestedId": "ChuckleberryFinnAlertSystem",
+      "WorkshopId": "3077900375"
+    },
+    {
+      "ModId": "errorMagnifier",
+      "RequestedId": "errorMagnifier",
+      "WorkshopId": "2896041179"
+    },
+    {
+      "ModId": "NeatUI_Framework",
+      "RequestedId": "NeatUI_Framework",
+      "WorkshopId": "3508537032"
+    },
+    {
+      "ModId": "StarlitLibrary",
+      "RequestedId": "StarlitLibrary",
+      "WorkshopId": "3378285185"
+    },
+    {
+      "ModId": "YAPZLib",
+      "RequestedId": "YAPZLib",
+      "WorkshopId": "3624971238"
+    },
+    {
+      "ModId": "tsarslib",
+      "RequestedId": "tsarslib",
+      "WorkshopId": "3402491515"
+    },
+    {
+      "ModId": "SpnOpenClothBase",
+      "RequestedId": "SpnOpenClothBase",
+      "WorkshopId": "2812326159"
+    },
+    {
+      "ModId": "SPNCC",
+      "RequestedId": "SPNCC",
+      "WorkshopId": "3414634809"
+    },
+    {
+      "ModId": "ModLoadOrderSorter_b42",
+      "RequestedId": "ModLoadOrderSorter_b42",
+      "WorkshopId": "3423660713"
+    },
+    {
+      "ModId": "HBVCEFb42",
+      "RequestedId": "HBVCEFb42",
+      "WorkshopId": "3610677934"
+    },
+    {
+      "ModId": "SWMG",
+      "RequestedId": "SWMG",
+      "WorkshopId": "3722064198"
+    },
+    {
+      "ModId": "damnlib",
+      "RequestedId": "damnlib",
+      "WorkshopId": "3171167894"
+    },
+    {
+      "ModId": "MoodleFramework",
+      "RequestedId": "MoodleFramework",
+      "WorkshopId": "3396446795"
+    },
+    {
+      "ModId": "UnifiedCarryWeightFramework",
+      "RequestedId": "UnifiedCarryWeightFramework",
+      "WorkshopId": "3682045254"
+    },
+    {
+      "ModId": "ModManager",
+      "RequestedId": "ModManager",
+      "WorkshopId": "3567084868"
+    },
+    {
+      "ModId": "ModFolders",
+      "RequestedId": "ModFolders",
+      "WorkshopId": "3779201168"
+    },
+    {
+      "ModId": "CleanUI",
+      "RequestedId": "CleanUI",
+      "WorkshopId": "3437629766"
+    },
+    {
+      "ModId": "Neat_Building_UIOnly",
+      "RequestedId": "Neat_Building_UIOnly",
+      "WorkshopId": "3536052310"
+    },
+    {
+      "ModId": "Neat_Crafting",
+      "RequestedId": "Neat_Crafting",
+      "WorkshopId": "3502080466"
+    },
+    {
+      "ModId": "Neat_Crafting_AddonXP",
+      "RequestedId": "Neat_Crafting_AddonXP",
+      "WorkshopId": "3540503606"
+    },
+    {
+      "ModId": "Project_Cook",
+      "RequestedId": "Project_Cook",
+      "WorkshopId": "3490188370"
+    },
+    {
+      "ModId": "Project_Cook_Pixel_Icon_Pack",
+      "RequestedId": "Project_Cook_Pixel_Icon_Pack",
+      "WorkshopId": "3490188370"
+    },
+    {
+      "ModId": "ShelterHold_Beehive",
+      "RequestedId": "ShelterHold_Beehive",
+      "WorkshopId": "3596827035"
+    },
+    {
+      "ModId": "TheShortcut",
+      "RequestedId": "TheShortcut",
+      "WorkshopId": "3470659758"
+    },
+    {
+      "ModId": "EQUIPMENT_UI_B42",
+      "RequestedId": "EQUIPMENT_UI_B42",
+      "WorkshopId": "3682936016"
+    },
+    {
+      "ModId": "ModernStatus",
+      "RequestedId": "ModernStatus",
+      "WorkshopId": "3451167732"
+    },
+    {
+      "ModId": "eris_food_expiry",
+      "RequestedId": "eris_food_expiry",
+      "WorkshopId": "3392259028"
+    },
+    {
+      "ModId": "darkerMap",
+      "RequestedId": "darkerMap",
+      "WorkshopId": "2939187818"
+    },
+    {
+      "ModId": "DetailedDescriptionsForOccupationsAndTraits",
+      "RequestedId": "DetailedDescriptionsForOccupationsAndTraits",
+      "WorkshopId": "3387957272"
+    },
+    {
+      "ModId": "VanillaOutfitsExpanded",
+      "RequestedId": "VanillaOutfitsExpanded",
+      "WorkshopId": "3783094058"
+    },
+    {
+      "ModId": "CVI",
+      "RequestedId": "CVI",
+      "WorkshopId": "3749026793"
+    },
+    {
+      "ModId": "SkullysZombieCollision",
+      "RequestedId": "SkullysZombieCollision",
+      "WorkshopId": "3778511497"
+    },
+    {
+      "ModId": "BiggerCharacterAvatarLarge",
+      "RequestedId": "BiggerCharacterAvatarLarge",
+      "WorkshopId": "3387640099"
+    },
+    {
+      "ModId": "JumboTreeIndoorFix",
+      "RequestedId": "JumboTreeIndoorFix",
+      "WorkshopId": "3774826484"
+    },
+    {
+      "ModId": "VanillaFoodsExpanded",
+      "RequestedId": "VanillaFoodsExpanded",
+      "WorkshopId": "3577903007"
+    },
+    {
+      "ModId": "LongTermPreservationExtended",
+      "RequestedId": "LongTermPreservationExtended",
+      "WorkshopId": "3597673472"
+    },
+    {
+      "ModId": "LongTermPreservationExtendedVFX",
+      "RequestedId": "LongTermPreservationExtendedVFX",
+      "WorkshopId": "3597673472"
+    },
+    {
+      "ModId": "CyesPushDoors",
+      "RequestedId": "CyesPushDoors",
+      "WorkshopId": "3780683663"
+    },
+    {
+      "ModId": "FittedSheets",
+      "RequestedId": "FittedSheets",
+      "WorkshopId": "3794207681"
+    },
+    {
+      "ModId": "TakeABathAndShowerNew",
+      "RequestedId": "TakeABathAndShowerNew",
+      "WorkshopId": "3592172476"
+    },
+    {
+      "ModId": "Buttstroke",
+      "RequestedId": "Buttstroke",
+      "WorkshopId": "3394044313"
+    },
+    {
+      "ModId": "FenceSheets",
+      "RequestedId": "FenceSheets",
+      "WorkshopId": "3785740658"
+    },
+    {
+      "ModId": "alicesWeaponSling",
+      "RequestedId": "alicesWeaponSling",
+      "WorkshopId": "3775549570"
+    },
+    {
+      "ModId": "alicesWeaponSlingRadialMenu",
+      "RequestedId": "alicesWeaponSlingRadialMenu",
+      "WorkshopId": "3775549570"
+    },
+    {
+      "ModId": "ItemArrange",
+      "RequestedId": "ItemArrange",
+      "WorkshopId": "3767639280"
+    },
+    {
+      "ModId": "LightOnBelt",
+      "RequestedId": "LightOnBelt",
+      "WorkshopId": "3394588830"
+    },
+    {
+      "ModId": "ImmersiveSnow",
+      "RequestedId": "ImmersiveSnow",
+      "WorkshopId": "3810071828"
+    },
+    {
+      "ModId": "ItemCondition_KingEJ",
+      "RequestedId": "ItemCondition_KingEJ",
+      "WorkshopId": "3641048285"
+    },
+    {
+      "ModId": "FittedBarricades",
+      "RequestedId": "FittedBarricades",
+      "WorkshopId": "3795414660"
+    },
+    {
+      "ModId": "JB_BugsInLights",
+      "RequestedId": "JB_BugsInLights",
+      "WorkshopId": "3717902500"
+    },
+    {
+      "ModId": "DEON_CVG",
+      "RequestedId": "DEON_CVG",
+      "WorkshopId": "3390487814"
+    },
+    {
+      "ModId": "BetterGeneratorInfo",
+      "RequestedId": "BetterGeneratorInfo",
+      "WorkshopId": "3576056135"
+    },
+    {
+      "ModId": "ZombieVisibilityFix",
+      "RequestedId": "ZombieVisibilityFix",
+      "WorkshopId": "3814073243"
+    },
+    {
+      "ModId": "SpnCloth",
+      "RequestedId": "SpnCloth",
+      "WorkshopId": "2684285534"
+    },
+    {
+      "ModId": "SpnOpenCloth",
+      "RequestedId": "SpnOpenCloth",
+      "WorkshopId": "2812326159"
+    },
+    {
+      "ModId": "SPNCCDetails",
+      "RequestedId": "SPNCCDetails",
+      "WorkshopId": "3414634809"
+    },
+    {
+      "ModId": "EURY_CONTAINERS",
+      "RequestedId": "EURY_CONTAINERS",
+      "WorkshopId": "3586216562"
+    },
+    {
+      "ModId": "SLDarkerSnow",
+      "RequestedId": "SLDarkerSnow",
+      "WorkshopId": "3371613588"
+    },
+    {
+      "ModId": "Tuna_GunRacks",
+      "RequestedId": "Tuna_GunRacks",
+      "WorkshopId": "3784677588"
+    },
+    {
+      "ModId": "Tuna_EquipmentRacks",
+      "RequestedId": "Tuna_EquipmentRacks",
+      "WorkshopId": "3793403177"
+    },
+    {
+      "ModId": "autotsartrailers",
+      "RequestedId": "autotsartrailers",
+      "WorkshopId": "3402493701"
+    },
+    {
+      "ModId": "amclub",
+      "RequestedId": "amclub",
+      "WorkshopId": "3404737883"
+    },
+    {
+      "ModId": "ATA_Bus",
+      "RequestedId": "ATA_Bus",
+      "WorkshopId": "3402812859"
+    },
+    {
+      "ModId": "better-auto-mechanics",
+      "RequestedId": "better-auto-mechanics",
+      "WorkshopId": "3635856965"
+    },
+    {
+      "ModId": "Bandits2",
+      "RequestedId": "Bandits2",
+      "WorkshopId": "3268487204"
+    },
+    {
+      "ModId": "TrueWeight",
+      "RequestedId": "TrueWeight",
+      "WorkshopId": "3768669395"
+    },
+    {
+      "ModId": "NicksTurnOffFridges",
+      "RequestedId": "NicksTurnOffFridges",
+      "WorkshopId": "3778868211"
+    },
+    {
+      "ModId": "RepairAnyClothes",
+      "RequestedId": "RepairAnyClothes",
+      "WorkshopId": "2142622992"
+    },
+    {
+      "ModId": "ImmersiveBlackouts",
+      "RequestedId": "ImmersiveBlackouts",
+      "WorkshopId": "3607686447"
+    },
+    {
+      "ModId": "Project_Seasons_B42",
+      "RequestedId": "Project_Seasons_B42",
+      "WorkshopId": "3412105017"
+    },
+    {
+      "ModId": "BarricadedWorld",
+      "RequestedId": "BarricadedWorld",
+      "WorkshopId": "3529472651"
+    },
+    {
+      "ModId": "beautyofzomboid",
+      "RequestedId": "beautyofzomboid",
+      "WorkshopId": "3333779609"
+    },
+    {
+      "ModId": "beautyofzomboid dense grass",
+      "RequestedId": "beautyofzomboid dense grass",
+      "WorkshopId": "3333779609"
+    },
+    {
+      "ModId": "ALTGRASS",
+      "RequestedId": "ALTGRASS",
+      "WorkshopId": "3333779609"
+    },
+    {
+      "ModId": "ImmersiveCarsDecay",
+      "RequestedId": "ImmersiveCarsDecay",
+      "WorkshopId": "3495105059"
+    },
+    {
+      "ModId": "TimeDecreasesCarConditionB42",
+      "RequestedId": "TimeDecreasesCarConditionB42",
+      "WorkshopId": "3448375286"
+    },
+    {
+      "ModId": "DG_MIVehicles",
+      "RequestedId": "DG_MIVehicles",
+      "WorkshopId": "3162566044"
+    },
+    {
+      "ModId": "DG_MTJ",
+      "RequestedId": "DG_MTJ",
+      "WorkshopId": "3281859265"
+    },
+    {
+      "ModId": "MoreDamagedObjects",
+      "RequestedId": "MoreDamagedObjects",
+      "WorkshopId": "3413150945"
+    },
+    {
+      "ModId": "SMB_steps",
+      "RequestedId": "SMB_steps",
+      "WorkshopId": "3813489363"
+    },
+    {
+      "ModId": "RealisticDash",
+      "RequestedId": "RealisticDash",
+      "WorkshopId": "3635591071"
+    },
+    {
+      "ModId": "Navigator",
+      "RequestedId": "Navigator",
+      "WorkshopId": "3708816224"
+    },
+    {
+      "ModId": "mapmodmanager",
+      "RequestedId": "mapmodmanager",
+      "WorkshopId": "3360392628"
+    },
+    {
+      "ModId": "P4PickingMeister",
+      "RequestedId": "P4PickingMeister",
+      "WorkshopId": "3422220305"
+    },
+    {
+      "ModId": "RainCleansBlood",
+      "RequestedId": "RainCleansBlood",
+      "WorkshopId": "2956146279"
+    },
+    {
+      "ModId": "OpenAllContainers",
+      "RequestedId": "OpenAllContainers",
+      "WorkshopId": "3465040406"
+    },
+    {
+      "ModId": "ItIsOfInterestToMe",
+      "RequestedId": "ItIsOfInterestToMe",
+      "WorkshopId": "3796373365"
+    },
+    {
+      "ModId": "EquipClothingWhileMoving",
+      "RequestedId": "EquipClothingWhileMoving",
+      "WorkshopId": "3446510982"
+    },
+    {
+      "ModId": "MiniHealthPanel",
+      "RequestedId": "MiniHealthPanel",
+      "WorkshopId": "2866258937"
+    },
+    {
+      "ModId": "RepairableWindows",
+      "RequestedId": "RepairableWindows",
+      "WorkshopId": "3378304610"
+    },
+    {
+      "ModId": "P4HasBeenRead",
+      "RequestedId": "P4HasBeenRead",
+      "WorkshopId": "2544353492"
+    },
+    {
+      "ModId": "MinimalSidebar",
+      "RequestedId": "MinimalSidebar",
+      "WorkshopId": "3642084851"
+    },
+    {
+      "ModId": "ReplaceBandage",
+      "RequestedId": "ReplaceBandage",
+      "WorkshopId": "2944344655"
+    },
+    {
+      "ModId": "KillCount",
+      "RequestedId": "KillCount",
+      "WorkshopId": "2553809727"
+    },
+    {
+      "ModId": "coldwinters",
+      "RequestedId": "coldwinters",
+      "WorkshopId": "3577100076"
+    },
+    {
+      "ModId": "coldwintersdlc",
+      "RequestedId": "coldwintersdlc",
+      "WorkshopId": "3787985510"
+    },
+    {
+      "ModId": "NoLighterNeeded",
+      "RequestedId": "NoLighterNeeded",
+      "WorkshopId": "2714198296"
+    },
+    {
+      "ModId": "FWOFitnessWorkoutOverhaul",
+      "RequestedId": "FWOFitnessWorkoutOverhaul",
+      "WorkshopId": "2940354599"
+    },
+    {
+      "ModId": "RiskyInspectWeapon",
+      "RequestedId": "RiskyInspectWeapon",
+      "WorkshopId": "2948824747"
+    },
+    {
+      "ModId": "ItemInspectionUI",
+      "RequestedId": "ItemInspectionUI",
+      "WorkshopId": "3617732907"
+    },
+    {
+      "ModId": "UsefulPallets",
+      "RequestedId": "UsefulPallets",
+      "WorkshopId": "3813053718"
+    },
+    {
+      "ModId": "NeatLockpicking",
+      "RequestedId": "NeatLockpicking",
+      "WorkshopId": "3783535220"
+    },
+    {
+      "ModId": "P4AddictedToWeight",
+      "RequestedId": "P4AddictedToWeight",
+      "WorkshopId": "2604943386"
+    },
+    {
+      "ModId": "04vwTouran",
+      "RequestedId": "04vwTouran",
+      "WorkshopId": "3478633453"
+    },
+    {
+      "ModId": "49powerWagon",
+      "RequestedId": "49powerWagon",
+      "WorkshopId": "2900580391"
+    },
+    {
+      "ModId": "59meteor",
+      "RequestedId": "59meteor",
+      "WorkshopId": "2772575623"
+    },
+    {
+      "ModId": "ECTO1",
+      "RequestedId": "ECTO1",
+      "WorkshopId": "2772575623"
+    },
+    {
+      "ModId": "62daimlerFerret",
+      "RequestedId": "62daimlerFerret",
+      "WorkshopId": "3787530735"
+    },
+    {
+      "ModId": "63beetle",
+      "RequestedId": "63beetle",
+      "WorkshopId": "3005903549"
+    },
+    {
+      "ModId": "63Type2Van",
+      "RequestedId": "63Type2Van",
+      "WorkshopId": "3041122351"
+    },
+    {
+      "ModId": "65banshee",
+      "RequestedId": "65banshee",
+      "WorkshopId": "3566868353"
+    },
+    {
+      "ModId": "66pontiacLeMans",
+      "RequestedId": "66pontiacLeMans",
+      "WorkshopId": "3447272250"
+    },
+    {
+      "ModId": "67commando",
+      "RequestedId": "67commando",
+      "WorkshopId": "2478247379"
+    },
+    {
+      "ModId": "67gt500",
+      "RequestedId": "67gt500",
+      "WorkshopId": "3026723485"
+    },
+    {
+      "ModId": "68firebird",
+      "RequestedId": "68firebird",
+      "WorkshopId": "3258343790"
+    },
+    {
+      "ModId": "69charger",
+      "RequestedId": "69charger",
+      "WorkshopId": "3631989559"
+    },
+    {
+      "ModId": "69fordMustang",
+      "RequestedId": "69fordMustang",
+      "WorkshopId": "3756938756"
+    },
+    {
+      "ModId": "69camaro",
+      "RequestedId": "69camaro",
+      "WorkshopId": "2991201484"
+    },
+    {
+      "ModId": "69fordMustangExtra",
+      "RequestedId": "69fordMustangExtra",
+      "WorkshopId": "3756938756"
+    },
+    {
+      "ModId": "69mini",
+      "RequestedId": "69mini",
+      "WorkshopId": "2937786633"
+    },
+    {
+      "ModId": "69mini_ItalianJob",
+      "RequestedId": "69mini_ItalianJob",
+      "WorkshopId": "2937786633"
+    },
+    {
+      "ModId": "69mini_MrBean",
+      "RequestedId": "69mini_MrBean",
+      "WorkshopId": "2937786633"
+    },
+    {
+      "ModId": "69mini_PitbullSpecial",
+      "RequestedId": "69mini_PitbullSpecial",
+      "WorkshopId": "2937786633"
+    },
+    {
+      "ModId": "70chevelle",
+      "RequestedId": "70chevelle",
+      "WorkshopId": "3766571591"
+    },
+    {
+      "ModId": "70dodge",
+      "RequestedId": "70dodge",
+      "WorkshopId": "2873290424"
+    },
+    {
+      "ModId": "70fordEscort",
+      "RequestedId": "70fordEscort",
+      "WorkshopId": "3670063857"
+    },
+    {
+      "ModId": "70barracuda",
+      "RequestedId": "70barracuda",
+      "WorkshopId": "2913633066"
+    },
+    {
+      "ModId": "70roadRunner",
+      "RequestedId": "70roadRunner",
+      "WorkshopId": "3642935062"
+    },
+    {
+      "ModId": "73fordFalcon",
+      "RequestedId": "73fordFalcon",
+      "WorkshopId": "3490370700"
+    },
+    {
+      "ModId": "73fordFalconPS",
+      "RequestedId": "73fordFalconPS",
+      "WorkshopId": "3490370700"
+    },
+    {
+      "ModId": "73nissanGTR",
+      "RequestedId": "73nissanGTR",
+      "WorkshopId": "3743371090"
+    },
+    {
+      "ModId": "75grandPrix",
+      "RequestedId": "75grandPrix",
+      "WorkshopId": "3213391371"
+    },
+    {
+      "ModId": "76chevyKseries",
+      "RequestedId": "76chevyKseries",
+      "WorkshopId": "3161951724"
+    },
+    {
+      "ModId": "76chevyKseriesExpanded",
+      "RequestedId": "76chevyKseriesExpanded",
+      "WorkshopId": "3161951724"
+    },
+    {
+      "ModId": "77firebird",
+      "RequestedId": "77firebird",
+      "WorkshopId": "3346905070"
+    },
+    {
+      "ModId": "76chryslerNewYorker",
+      "RequestedId": "76chryslerNewYorker",
+      "WorkshopId": "3730833846"
+    },
+    {
+      "ModId": "78amgeneralM35A2",
+      "RequestedId": "78amgeneralM35A2",
+      "WorkshopId": "2799152995"
+    },
+    {
+      "ModId": "78amgeneralM35A2extra",
+      "RequestedId": "78amgeneralM35A2extra",
+      "WorkshopId": "2799152995"
+    },
+    {
+      "ModId": "78amgeneralM49A2C",
+      "RequestedId": "78amgeneralM49A2C",
+      "WorkshopId": "2799152995"
+    },
+    {
+      "ModId": "78amgeneralM50A3",
+      "RequestedId": "78amgeneralM50A3",
+      "WorkshopId": "2799152995"
+    },
+    {
+      "ModId": "78amgeneralM62",
+      "RequestedId": "78amgeneralM62",
+      "WorkshopId": "2799152995"
+    },
+    {
+      "ModId": "79camaro",
+      "RequestedId": "79camaro",
+      "WorkshopId": "3703948448"
+    },
+    {
+      "ModId": "80manKat1",
+      "RequestedId": "80manKat1",
+      "WorkshopId": "3248388837"
+    },
+    {
+      "ModId": "81deloreanDMC12",
+      "RequestedId": "81deloreanDMC12",
+      "WorkshopId": "3253385114"
+    },
+    {
+      "ModId": "81deloreanDMC12BTTF",
+      "RequestedId": "81deloreanDMC12BTTF",
+      "WorkshopId": "3253385114"
+    },
+    {
+      "ModId": "82jeepJ10",
+      "RequestedId": "82jeepJ10",
+      "WorkshopId": "2886832257"
+    },
+    {
+      "ModId": "82jeepJ10t",
+      "RequestedId": "82jeepJ10t",
+      "WorkshopId": "2886832257"
+    },
+    {
+      "ModId": "82oshkoshM911",
+      "RequestedId": "82oshkoshM911",
+      "WorkshopId": "2618213077"
+    },
+    {
+      "ModId": "82firebird",
+      "RequestedId": "82firebird",
+      "WorkshopId": "3320947974"
+    },
+    {
+      "ModId": "82firebirdKITT",
+      "RequestedId": "82firebirdKITT",
+      "WorkshopId": "3320947974"
+    },
+    {
+      "ModId": "82porsche911",
+      "RequestedId": "82porsche911",
+      "WorkshopId": "3379334330"
+    },
+    {
+      "ModId": "83amgeneralM923",
+      "RequestedId": "83amgeneralM923",
+      "WorkshopId": "2811383142"
+    },
+    {
+      "ModId": "83gmcGseriesVans",
+      "RequestedId": "83gmcGseriesVans",
+      "WorkshopId": "3799732653"
+    },
+    {
+      "ModId": "83gmcVanduraATeam",
+      "RequestedId": "83gmcVanduraATeam",
+      "WorkshopId": "3799732653"
+    },
+    {
+      "ModId": "84buickElectra",
+      "RequestedId": "84buickElectra",
+      "WorkshopId": "3596903773"
+    },
+    {
+      "ModId": "84cadillacDeVille",
+      "RequestedId": "84cadillacDeVille",
+      "WorkshopId": "3592777775"
+    },
+    {
+      "ModId": "84gageV300",
+      "RequestedId": "84gageV300",
+      "WorkshopId": "3171184800"
+    },
+    {
+      "ModId": "84corvette",
+      "RequestedId": "84corvette",
+      "WorkshopId": "3684254299"
+    },
+    {
+      "ModId": "84merc",
+      "RequestedId": "84merc",
+      "WorkshopId": "2805630347"
+    },
+    {
+      "ModId": "84jeepXJ",
+      "RequestedId": "84jeepXJ",
+      "WorkshopId": "3409287192"
+    },
+    {
+      "ModId": "84oldsmobile98",
+      "RequestedId": "84oldsmobile98",
+      "WorkshopId": "3601417745"
+    },
+    {
+      "ModId": "85buickLeSabre",
+      "RequestedId": "85buickLeSabre",
+      "WorkshopId": "3418252689"
+    },
+    {
+      "ModId": "85chevyCaprice",
+      "RequestedId": "85chevyCaprice",
+      "WorkshopId": "3413704851"
+    },
+    {
+      "ModId": "85chevyStepVan",
+      "RequestedId": "85chevyStepVan",
+      "WorkshopId": "3614034284"
+    },
+    {
+      "ModId": "85chevyStepVanexpanded",
+      "RequestedId": "85chevyStepVanexpanded",
+      "WorkshopId": "3614034284"
+    },
+    {
+      "ModId": "85oldsmobileDelta88",
+      "RequestedId": "85oldsmobileDelta88",
+      "WorkshopId": "3418253716"
+    },
+    {
+      "ModId": "85pontiacParisienne",
+      "RequestedId": "85pontiacParisienne",
+      "WorkshopId": "3413706334"
+    },
+    {
+      "ModId": "86chevyCUCV",
+      "RequestedId": "86chevyCUCV",
+      "WorkshopId": "3428008364"
+    },
+    {
+      "ModId": "86fordE150",
+      "RequestedId": "86fordE150",
+      "WorkshopId": "2870394916"
+    },
+    {
+      "ModId": "86fordE150expanded",
+      "RequestedId": "86fordE150expanded",
+      "WorkshopId": "2870394916"
+    },
+    {
+      "ModId": "86fordE150dnd",
+      "RequestedId": "86fordE150dnd",
+      "WorkshopId": "2870394916"
+    },
+    {
+      "ModId": "86fordE150mm",
+      "RequestedId": "86fordE150mm",
+      "WorkshopId": "2870394916"
+    },
+    {
+      "ModId": "86fordE150pd",
+      "RequestedId": "86fordE150pd",
+      "WorkshopId": "2870394916"
+    },
+    {
+      "ModId": "86oshkoshP19A",
+      "RequestedId": "86oshkoshP19A",
+      "WorkshopId": "2566953935"
+    },
+    {
+      "ModId": "87buickRegal",
+      "RequestedId": "87buickRegal",
+      "WorkshopId": "3226885926"
+    },
+    {
+      "ModId": "87chevySuburban",
+      "RequestedId": "87chevySuburban",
+      "WorkshopId": "3196180339"
+    },
+    {
+      "ModId": "87fordB700",
+      "RequestedId": "87fordB700",
+      "WorkshopId": "3110911330"
+    },
+    {
+      "ModId": "87toyotaCorolla",
+      "RequestedId": "87toyotaCorolla",
+      "WorkshopId": "3779315249"
+    },
+    {
+      "ModId": "87toyotaMR2",
+      "RequestedId": "87toyotaMR2",
+      "WorkshopId": "3052360250"
+    },
+    {
+      "ModId": "88chevyS10",
+      "RequestedId": "88chevyS10",
+      "WorkshopId": "2886832936"
+    },
+    {
+      "ModId": "88toyotaHilux",
+      "RequestedId": "88toyotaHilux",
+      "WorkshopId": "3435796523"
+    },
+    {
+      "ModId": "89dodgeCaravan",
+      "RequestedId": "89dodgeCaravan",
+      "WorkshopId": "3034636011"
+    },
+    {
+      "ModId": "89fordBronco",
+      "RequestedId": "89fordBronco",
+      "WorkshopId": "2886833398"
+    },
+    {
+      "ModId": "89trooper",
+      "RequestedId": "89trooper",
+      "WorkshopId": "2932549988"
+    },
+    {
+      "ModId": "89defender",
+      "RequestedId": "89defender",
+      "WorkshopId": "3570973322"
+    },
+    {
+      "ModId": "89volvo200",
+      "RequestedId": "89volvo200",
+      "WorkshopId": "3292659291"
+    },
+    {
+      "ModId": "90bmwE30",
+      "RequestedId": "90bmwE30",
+      "WorkshopId": "3110913021"
+    },
+    {
+      "ModId": "90fordF350ambulance",
+      "RequestedId": "90fordF350ambulance",
+      "WorkshopId": "2952802178"
+    },
+    {
+      "ModId": "90pierceArrow",
+      "RequestedId": "90pierceArrow",
+      "WorkshopId": "2942793445"
+    },
+    {
+      "ModId": "91fordLTD",
+      "RequestedId": "91fordLTD",
+      "WorkshopId": "3366300557"
+    },
+    {
+      "ModId": "91fordRanger",
+      "RequestedId": "91fordRanger",
+      "WorkshopId": "3539691958"
+    },
+    {
+      "ModId": "91geoMetro",
+      "RequestedId": "91geoMetro",
+      "WorkshopId": "3008795514"
+    },
+    {
+      "ModId": "91lexusLS400",
+      "RequestedId": "91lexusLS400",
+      "WorkshopId": "3770890864"
+    },
+    {
+      "ModId": "91nissan240sx",
+      "RequestedId": "91nissan240sx",
+      "WorkshopId": "3504401781"
+    },
+    {
+      "ModId": "91range",
+      "RequestedId": "91range",
+      "WorkshopId": "2409333430"
+    },
+    {
+      "ModId": "92amgeneralM998",
+      "RequestedId": "92amgeneralM998",
+      "WorkshopId": "2642541073"
+    },
+    {
+      "ModId": "92fordCVPI",
+      "RequestedId": "92fordCVPI",
+      "WorkshopId": "2962175696"
+    },
+    {
+      "ModId": "92jeepYJ",
+      "RequestedId": "92jeepYJ",
+      "WorkshopId": "3287727378"
+    },
+    {
+      "ModId": "92jeepYJJP18",
+      "RequestedId": "92jeepYJJP18",
+      "WorkshopId": "3287727378"
+    },
+    {
+      "ModId": "92nissanGTR",
+      "RequestedId": "92nissanGTR",
+      "WorkshopId": "2846036306"
+    },
+    {
+      "ModId": "92vwGolfMk2",
+      "RequestedId": "92vwGolfMk2",
+      "WorkshopId": "3812024929"
+    },
+    {
+      "ModId": "93chevySuburban",
+      "RequestedId": "93chevySuburban",
+      "WorkshopId": "3152529790"
+    },
+    {
+      "ModId": "93chevySuburbanExpanded",
+      "RequestedId": "93chevySuburbanExpanded",
+      "WorkshopId": "3152529790"
+    },
+    {
+      "ModId": "93fordElgin",
+      "RequestedId": "93fordElgin",
+      "WorkshopId": "2969343830"
+    },
+    {
+      "ModId": "93fordF350",
+      "RequestedId": "93fordF350",
+      "WorkshopId": "3073430075"
+    },
+    {
+      "ModId": "93mustangSSP",
+      "RequestedId": "93mustangSSP",
+      "WorkshopId": "3001592312"
+    },
+    {
+      "ModId": "93fordTaurus",
+      "RequestedId": "93fordTaurus",
+      "WorkshopId": "3088951320"
+    },
+    {
+      "ModId": "93townCar",
+      "RequestedId": "93townCar",
+      "WorkshopId": "2932547723"
+    },
+    {
+      "ModId": "95impreza",
+      "RequestedId": "95impreza",
+      "WorkshopId": "3647735736"
+    },
+    {
+      "ModId": "96lancerEVO",
+      "RequestedId": "96lancerEVO",
+      "WorkshopId": "3647736504"
+    },
+    {
+      "ModId": "96saturnSseries",
+      "RequestedId": "96saturnSseries",
+      "WorkshopId": "3679880253"
+    },
+    {
+      "ModId": "98stagea",
+      "RequestedId": "98stagea",
+      "WorkshopId": "3315443103"
+    },
+    {
+      "ModId": "97bushmaster",
+      "RequestedId": "97bushmaster",
+      "WorkshopId": "2897390033"
+    },
+    {
+      "ModId": "99fordCVPI",
+      "RequestedId": "99fordCVPI",
+      "WorkshopId": "2971246021"
+    },
+    {
+      "ModId": "isoContainers",
+      "RequestedId": "isoContainers",
+      "WorkshopId": "2625625421"
+    },
+    {
+      "ModId": "KI5campers",
+      "RequestedId": "KI5campers",
+      "WorkshopId": "3670064951"
+    },
+    {
+      "ModId": "PushVehicle",
+      "RequestedId": "PushVehicle",
+      "WorkshopId": "3780639614"
+    },
+    {
+      "ModId": "KI5trailers",
+      "RequestedId": "KI5trailers",
+      "WorkshopId": "3330403100"
+    },
+    {
+      "ModId": "YouDriveISleep",
+      "RequestedId": "YouDriveISleep",
+      "WorkshopId": "2830570280"
+    },
+    {
+      "ModId": "GunsOfMarz",
+      "RequestedId": "GunsOfMarz",
+      "WorkshopId": "3722134990"
+    },
+    {
+      "ModId": "HBAmmoCraft",
+      "RequestedId": "HBAmmoCraft",
+      "WorkshopId": "3610677934"
+    },
+    {
+      "ModId": "HBTacReload",
+      "RequestedId": "HBTacReload",
+      "WorkshopId": "3610677934"
+    },
+    {
+      "ModId": "AatheomEMVFSM",
+      "RequestedId": "AatheomEMVFSM",
+      "WorkshopId": "3322066592"
+    },
+    {
+      "ModId": "FWOBenchPressTreadmill",
+      "RequestedId": "FWOBenchPressTreadmill",
+      "WorkshopId": "2940354599"
+    },
+    {
+      "ModId": "HideDebugMenu",
+      "RequestedId": "HideDebugMenu",
+      "WorkshopId": "3554048011"
+    },
+    {
+      "ModId": "LowConditionGuns",
+      "RequestedId": "LowConditionGuns",
+      "WorkshopId": "3579180724"
+    },
+    {
+      "ModId": "ReloadAllMagazines",
+      "RequestedId": "ReloadAllMagazines",
+      "WorkshopId": "2920899878"
+    },
+    {
+      "ModId": "SomewhatWater",
+      "RequestedId": "SomewhatWater",
+      "WorkshopId": "3582960654"
+    },
+    {
+      "ModId": "SPNCCFaces",
+      "RequestedId": "SPNCCFaces",
+      "WorkshopId": "3414634809"
+    },
+    {
+      "ModId": "TrueSleep",
+      "RequestedId": "TrueSleep",
+      "WorkshopId": "3781533687"
+    },
+    {
+      "ModId": "TrueSmoking",
+      "RequestedId": "TrueSmoking",
+      "WorkshopId": "3423984426"
+    },
+    {
+      "ModId": "SmokingSoundsOverhaul",
+      "RequestedId": "SmokingSoundsOverhaul",
+      "WorkshopId": "2857762294"
+    },
+    {
+      "ModId": "VanillaGearExpanded",
+      "RequestedId": "VanillaGearExpanded",
+      "WorkshopId": "3401134276"
+    },
+    {
+      "ModId": "KAMER_WallHealth",
+      "RequestedId": "KAMER_WallHealth",
+      "WorkshopId": "3002666175"
+    },
+    {
+      "ModId": "KAMER_RepairWall",
+      "RequestedId": "KAMER_RepairWall",
+      "WorkshopId": "3006882690"
+    },
+    {
+      "ModId": "FH",
+      "RequestedId": "FH",
+      "WorkshopId": "2447729538"
+    },
+    {
+      "ModId": "SpnHair",
+      "RequestedId": "SpnHair",
+      "WorkshopId": "2463184726"
+    },
+    {
+      "ModId": "Improved_Blood_Ffects",
+      "RequestedId": "Improved_Blood_Ffects",
+      "WorkshopId": "2648152698"
+    },
+    {
+      "ModId": "J93RunningBloodPools",
+      "RequestedId": "J93RunningBloodPools",
+      "WorkshopId": "3784951301"
+    },
+    {
+      "ModId": "TombBody",
+      "RequestedId": "TombBody",
+      "WorkshopId": "3429790870"
+    },
+    {
+      "ModId": "VSUIKI5",
+      "RequestedId": "VSUIKI5",
+      "WorkshopId": "3501302358"
+    },
+    {
+      "ModId": "SpecLoot",
+      "RequestedId": "SpecLoot",
+      "WorkshopId": "3457132019"
+    },
+    {
+      "ModId": "VMZNEW",
+      "RequestedId": "VMZNEW",
+      "WorkshopId": "3436499337"
+    },
+    {
+      "ModId": "VVR",
+      "RequestedId": "VVR",
+      "WorkshopId": "3423424077"
+    },
+    {
+      "ModId": "VB_CommonSense",
+      "RequestedId": "VB_CommonSense",
+      "WorkshopId": "3750253491"
+    },
+    {
+      "ModId": "VehicleRepairOverhaul",
+      "RequestedId": "VehicleRepairOverhaul",
+      "WorkshopId": "2757712197"
+    },
+    {
+      "ModId": "VehicleSalvageOverhaulB42",
+      "RequestedId": "VehicleSalvageOverhaulB42",
+      "WorkshopId": "2757712197"
+    },
+    {
+      "ModId": "HereGoesTheSun",
+      "RequestedId": "HereGoesTheSun",
+      "WorkshopId": "3618557184"
+    },
+    {
+      "ModId": "CleanHotBar",
+      "RequestedId": "CleanHotBar",
+      "WorkshopId": "3461263912"
+    },
+    {
+      "ModId": "ContainerCapacityIndicator",
+      "RequestedId": "ContainerCapacityIndicator",
+      "WorkshopId": "3789660055"
+    },
+    {
+      "ModId": "MapLegendUI",
+      "RequestedId": "MapLegendUI",
+      "WorkshopId": "2710167561"
+    },
+    {
+      "ModId": "Briefing",
+      "RequestedId": "Briefing",
+      "WorkshopId": "3565244378"
+    },
+    {
+      "ModId": "SpnHairAPI",
+      "RequestedId": "SpnHairAPI",
+      "WorkshopId": "3041733782"
+    },
+    {
+      "ModId": "YakiHRB42",
+      "RequestedId": "YakiHRB42",
+      "WorkshopId": "2787539183"
+    },
+    {
+      "ModId": "SM4BootsExpandedB42",
+      "RequestedId": "SM4BootsExpandedB42",
+      "WorkshopId": "2850935956"
+    },
+    {
+      "ModId": "TombBodyCompat",
+      "RequestedId": "TombBodyCompat",
+      "WorkshopId": "3431734923"
+    },
+    {
+      "ModId": "TombBodyCompatBootsExp",
+      "RequestedId": "TombBodyCompatBootsExp",
+      "WorkshopId": "3431734923"
+    },
+    {
+      "ModId": "MinimalHotbar",
+      "RequestedId": "MinimalHotbar",
+      "WorkshopId": "3688576740"
+    }
+  ]
+}

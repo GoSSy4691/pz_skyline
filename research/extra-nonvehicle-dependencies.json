@@ -1,0 +1,388 @@
+{
+  "CheckedAt": "2026-10-11",
+  "TargetBuildVersion": "42.21.0",
+  "Scope": "Required-items sidebars for the 43 new non-vehicle Workshop items, plus TrueWeight and VanillaOutfitsExpanded retained checks.",
+  "Dependencies": [
+    {
+      "ModId": "improvedhairmenubuild42",
+      "WorkshopId": "3589548354",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Priority": 8700,
+      "MultiplayerEnabled": false,
+      "BlockAutoEnable": false,
+      "DisabledReason": "Optional author recommendation; enable only when a selected mod actually declares it as a native dependency.",
+      "Notes": "SpnHair lists this in its Steam Required items sidebar, but author SpnHair42.0/mod.info only requires FH, and SpnHairAPI42.18/mod.info declares loadModAfter only. Keep menu before SpnHairAPI if enabled. Do not install duplicate/older Improved Hair Menu variants.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3589548354",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false,
+        "PrimaryNativeMetadataSources": [
+          "https://raw.githubusercontent.com/LazySpongie/SpongieHair/main/Contents/mods/Spongie%20Hair/42.0/mod.info",
+          "https://raw.githubusercontent.com/LazySpongie/SpongieHairAPI/main/Contents/mods/Spongie%20Hairstyle%20Unlocker/42.18/mod.info"
+        ],
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "WorkshopTitle": "Improved Hair Menu Build 42"
+      }
+    }
+  ],
+  "MissingMandatoryDependenciesFound": [],
+  "WorkshopRequiredItemsAudit": [
+    {
+      "WorkshopId": "1299328280",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=1299328280",
+      "RequiredItemsRead": true,
+      "RequiredItems": [
+        {
+          "WorkshopId": "3682045254",
+          "Title": "Unified Carry Weight Framework (UCWF)"
+        }
+      ]
+    },
+    {
+      "WorkshopId": "2447729538",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2447729538",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "2463184726",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2463184726",
+      "RequiredItemsRead": true,
+      "RequiredItems": [
+        {
+          "WorkshopId": "2447729538",
+          "Title": "Fluffy Hair [B41/B42]"
+        },
+        {
+          "WorkshopId": "3041733782",
+          "Title": "Spongie's Hairstyle Unlocker"
+        },
+        {
+          "WorkshopId": "3589548354",
+          "Title": "Improved Hair Menu Build 42"
+        },
+        {
+          "WorkshopId": "2787539183",
+          "Title": "Yaki's Hair Retexture"
+        }
+      ]
+    },
+    {
+      "WorkshopId": "2648152698",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2648152698",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "2710167561",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2710167561",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "2787539183",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2787539183",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "2807001835",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2807001835",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "2850935956",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2850935956",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "2857762294",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2857762294",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "2920899878",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2920899878",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "2940354599",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2940354599",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "2972289937",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2972289937",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3002666175",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3002666175",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3006882690",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3006882690",
+      "RequiredItemsRead": true,
+      "RequiredItems": [
+        {
+          "WorkshopId": "3002666175",
+          "Title": "[B41&B42] Show Wall Health"
+        }
+      ]
+    },
+    {
+      "WorkshopId": "3041733782",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3041733782",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3101668503",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3101668503",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3171167894",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3171167894",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3322066592",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3322066592",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3340255334",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3340255334",
+      "RequiredItemsRead": false,
+      "RequiredItems": [],
+      "Limitation": "Steam content-preference gate; original description verified through Steam public metadata API."
+    },
+    {
+      "WorkshopId": "3396446795",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3396446795",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3401134276",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3401134276",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3414634809",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3414634809",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3422112160",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3422112160",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3423984426",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3423984426",
+      "RequiredItemsRead": true,
+      "RequiredItems": [
+        {
+          "WorkshopId": "3396446795",
+          "Title": "Moodle Framework"
+        },
+        {
+          "WorkshopId": "3378285185",
+          "Title": "Starlit Library"
+        }
+      ]
+    },
+    {
+      "WorkshopId": "3429790870",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3429790870",
+      "RequiredItemsRead": false,
+      "RequiredItems": [],
+      "Limitation": "Steam content-preference gate; original description verified through Steam public metadata API."
+    },
+    {
+      "WorkshopId": "3431734923",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3431734923",
+      "RequiredItemsRead": true,
+      "RequiredItems": [
+        {
+          "WorkshopId": "3429790870",
+          "Title": "Tomb's Player Body Overhaul"
+        }
+      ]
+    },
+    {
+      "WorkshopId": "3554048011",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3554048011",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3565244378",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3565244378",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3579180724",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3579180724",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3582960654",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3582960654",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3587315482",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3587315482",
+      "RequiredItemsRead": true,
+      "RequiredItems": [
+        {
+          "WorkshopId": "1299328280",
+          "Title": "More Traits [Legacy, read description]"
+        }
+      ]
+    },
+    {
+      "WorkshopId": "3610677934",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3610677934",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3682045254",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3682045254",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3688576740",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3688576740",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3722064198",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3722064198",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3722134990",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3722134990",
+      "RequiredItemsRead": true,
+      "RequiredItems": [
+        {
+          "WorkshopId": "3722064198",
+          "Title": "Gunworks Framework"
+        },
+        {
+          "WorkshopId": "3610677934",
+          "Title": "Hot Brass"
+        }
+      ]
+    },
+    {
+      "WorkshopId": "3763651059",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3763651059",
+      "RequiredItemsRead": false,
+      "RequiredItems": [],
+      "Limitation": "Public page fetch error; original description verified through Steam public metadata API."
+    },
+    {
+      "WorkshopId": "3773834525",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3773834525",
+      "RequiredItemsRead": true,
+      "RequiredItems": [
+        {
+          "WorkshopId": "3722064198",
+          "Title": "Gunworks Framework"
+        },
+        {
+          "WorkshopId": "3610677934",
+          "Title": "Hot Brass"
+        }
+      ]
+    },
+    {
+      "WorkshopId": "3774007514",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3774007514",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3781533687",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3781533687",
+      "RequiredItemsRead": false,
+      "RequiredItems": [],
+      "Limitation": "Public page fetch error; original description verified through Steam public metadata API."
+    },
+    {
+      "WorkshopId": "3784951301",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3784951301",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3789660055",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3789660055",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    },
+    {
+      "WorkshopId": "3811483602",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3811483602",
+      "RequiredItemsRead": true,
+      "RequiredItems": []
+    }
+  ],
+  "AdditionalRetainedChecks": [
+    {
+      "ModId": "TrueWeight",
+      "WorkshopId": "3768669395",
+      "RequiredItemsRead": true,
+      "RequiredItems": [],
+      "Notes": "Item-weight adjustment; no published requirement for the player-capacity UCWF library."
+    },
+    {
+      "ModId": "VanillaOutfitsExpanded",
+      "WorkshopId": "3783094058",
+      "RequiredItemsRead": true,
+      "RequiredItems": [],
+      "Notes": "No Required items block or MUAS reference in current author page."
+    }
+  ],
+  "Corrections": [
+    "Steam Required items alone must not turn an explicitly optional integration into a mandatory mod: GoM and Vanilla Weapons Plus both list Hot Brass in the sidebar, but author explicitly says optional.",
+    "SpnHair author native require is FH only; Improved Hair Menu, SpnHairAPI, and Yaki retexture are Workshop recommendations, although all but the menu are already requested.",
+    "ToadTraits author sidebar requires UnifiedCarryWeightFramework, already mapped in nonvehicles.json and present in the requested list."
+  ],
+  "LoaderEvidence": {
+    "NativeMetadataSelection": "Supporting primary bytecode inspection reports chosen-version mod.info replaces common/mod.info entirely; common is only used if version metadata is absent.",
+    "VersionCaveat": "Inspection source explicitly verified 42.20, not live 42.21 bytecode.",
+    "FolderSelection": "Same source reports major*1000+minor scoring, patch number ignored, minimum major 42; reject 41 version folders even if numerically older.",
+    "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3776551449&l=vietnamese"
+  }
+}

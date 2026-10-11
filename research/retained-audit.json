@@ -1,0 +1,469 @@
+{
+  "CheckedDate": "2026-10-11",
+  "TargetBuild": "42.21.0",
+  "Scope": "111 retained entries from the original catalog; 101 distinct Workshop items",
+  "CompatibilityGuaranteed": false,
+  "ModUpdates": [
+    {
+      "ModId": "ETO_B",
+      "Priority": 0,
+      "Notes": "Author recommends loading above all other mods so later texture replacements can overwrite it.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3119788162"
+    },
+    {
+      "ModId": "ATakeABathAndShowerDepthMap",
+      "Priority": 1,
+      "Notes": "Author's visual troubleshooting places the depth-map fix at the top of the list.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592172476"
+    },
+    {
+      "ModId": "TakeABathAndShowerNew",
+      "LoadAfter": [
+        "ATakeABathAndShowerDepthMap"
+      ],
+      "Notes": "Load after its included depth-map fix. Moodle Framework and Bath Towels Overhaul are recommended optional add-ons, not hard requirements.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592172476"
+    },
+    {
+      "ModId": "Tuna_EquipmentRacks",
+      "Requires": [
+        "Tuna_GunRacks"
+      ],
+      "Notes": "Author states the equipment locker does not load without 3D Gun Racks.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3793403177"
+    },
+    {
+      "ModId": "alicesWeaponSlingRadialMenu",
+      "Requires": [
+        "alicesWeaponSling"
+      ],
+      "Notes": "Optional radial-menu add-on uses the base sling mod.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3775549570"
+    },
+    {
+      "ModId": "beautyofzomboid",
+      "LoadAfter": [
+        "ETO_B",
+        "Project_Seasons_B42"
+      ],
+      "Notes": "Project Seasons author recommends it above Beauty of Zomboid when both are enabled.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3412105017"
+    },
+    {
+      "ModId": "HereGoesTheSun",
+      "LoadAfter": [
+        "Project_Seasons_B42",
+        "coldwinters",
+        "coldwintersdlc"
+      ],
+      "Priority": 940,
+      "Notes": "Author recommends placing after other climate/weather modifications as a precaution.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3618557184"
+    },
+    {
+      "ModId": "Bandits2",
+      "MinBuild": "42.20.0",
+      "Notes": "Current author page supports Build 42.20+ in single player and multiplayer; Bandit Creator is optional customization, not a required dependency.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3268487204"
+    },
+    {
+      "ModId": "SMB_steps",
+      "MinBuild": "42.21.0",
+      "Notes": "Current version requires 42.21; author reports dedicated-server testing. Avoid another ladder-climbing mod.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3813489363"
+    },
+    {
+      "ModId": "ImmersiveSnow",
+      "MinBuild": "42.20.0",
+      "Notes": "Author supports single player and dedicated multiplayer, including KI5 vehicle snow; known vehicle visual flicker remains.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3810071828"
+    },
+    {
+      "ModId": "Buttstroke",
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "The previous TacHoldFork exclusion is obsolete because both TacHold entries were removed from the new list. Exact 42.21 animation behavior still requires play testing.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3394044313"
+    },
+    {
+      "ModId": "UsefulBarrelsMP",
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Author explicitly states multiplayer is not fully implemented or tested; excluded from the conservative server profile.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3436537035"
+    },
+    {
+      "ModId": "ReactiveSE",
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Author says physical scene generation is single-player only and dedicated multiplayer testing is pending.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3656190498"
+    },
+    {
+      "ModId": "DynamicVehicleSnow",
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Redundant snow visual provider: its author recommends ImmersiveSnow. This is a conservative overlap recommendation, not an author-declared hard incompatibility.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3781818628"
+    },
+    {
+      "ModId": "ShelterHold_Beehive",
+      "Notes": "Author's published tested range ends at 42.20.4. Exact 42.21.0 support must be checked from downloaded metadata and multiplayer play testing.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3596827035"
+    },
+    {
+      "ModId": "Neat_Crafting_AddonXP",
+      "Notes": "Author's published range ends at 42.20.x; exact 42.21.0 is not explicitly certified. Validate downloaded version limits and crafting behavior.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3540503606"
+    },
+    {
+      "ModId": "VB_CommonSense",
+      "MinBuild": "42.20.0",
+      "Notes": "Author labels multiplayer a work in progress that mostly works; overlapping bandage, flashlight and magazine actions need multiplayer testing.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3750253491"
+    },
+    {
+      "ModId": "SPNCCDetailsHD",
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Requires matching 512x512 body textures. Default requested TombBody is a model replacement, while the chosen vanilla-face preset uses 256 textures.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3414634809"
+    },
+    {
+      "ModId": "PFHDTrueCargo",
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Author states server behavior is not yet tested; dedicated thrown-car spill is untested.",
+      "MinBuild": "42.15.0",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3806955469"
+    },
+    {
+      "ModId": "OverTheShoulder",
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Author only tested a hosted server with one player; animation synchronization to other players and dedicated multiplayer remain untested.",
+      "MinBuild": "42.20.0",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3808805481"
+    },
+    {
+      "ModId": "VehicleRepairOverhaul",
+      "Priority": 920,
+      "Notes": "Author recommends loading after all vehicle mods or near the bottom. Add explicit LoadAfter edges for the selected vehicle entries, with VehicleSalvageOverhaulB42 after this base.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2757712197"
+    },
+    {
+      "ModId": "DG_MIVehicles",
+      "Notes": "Author says not to enable in an existing world: existing vehicles' doors, hoods and trunks will open. Set probabilities in sandbox options; visual openings require animated vehicles.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3162566044"
+    },
+    {
+      "ModId": "ItemInspectionUI",
+      "MinBuild": "42.13.0",
+      "Notes": "Author claims compatibility with CleanUI and item/weapon packs, with MP support. Exact pack behavior still requires testing.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3617732907"
+    }
+  ],
+  "Conflicts": [],
+  "RemoveObsoleteConflicts": [
+    "TacHoldFork + TacHold Complete",
+    "TacHoldFork + Buttstroke"
+  ],
+  "Issues": [
+    {
+      "ModIds": [
+        "UsefulBarrelsMP"
+      ],
+      "Classification": "author-limited-multiplayer",
+      "Finding": "Author explicitly says multiplayer is not fully implemented or tested; the ModId suffix does not establish multiplayer reliability.",
+      "Action": "Exclude from default multiplayer profile; retain mapping for opt-in use.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3436537035"
+    },
+    {
+      "ModIds": [
+        "ReactiveSE"
+      ],
+      "Classification": "author-limited-multiplayer",
+      "Finding": "Author states physical scene generation is single-player only, multiplayer dedicated-server testing is pending, and tested build is 42.15.2 with minimum 42.13.",
+      "Action": "Exclude from conservative default multiplayer profile; do not substitute an unofficial fork.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3656190498"
+    },
+    {
+      "ModIds": [
+        "DynamicVehicleSnow",
+        "ImmersiveSnow"
+      ],
+      "Classification": "inferred-overlap",
+      "Finding": "Dynamic Vehicle Snow author now recommends Immersive Snow. Both provide snow visuals on vanilla vehicles; no explicit author hard incompatibility was found.",
+      "Action": "Prefer ImmersiveSnow and exclude DynamicVehicleSnow as a redundancy recommendation, not a confirmed conflict.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3781818628"
+    },
+    {
+      "ModIds": [
+        "ImmersiveSnow"
+      ],
+      "Classification": "known-visual-limitation",
+      "Finding": "Author supports 42.20+ single player and dedicated multiplayer, with KI5 support, but lists vehicle snow flickering at some angles as a known issue.",
+      "Action": "Test visual behavior; do not claim zero errors.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3810071828"
+    },
+    {
+      "ModIds": [
+        "ShelterHold_Beehive"
+      ],
+      "Classification": "target-build-unverified",
+      "Finding": "Author's published range ends at 42.20.4, although the mod states support for single player and dedicated multiplayer. 42.21.0 is not explicitly certified on the page.",
+      "Action": "Retain pending downloaded versionMin/versionMax checks and multiplayer beehive test.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3596827035"
+    },
+    {
+      "ModIds": [
+        "Neat_Crafting_AddonXP"
+      ],
+      "Classification": "target-build-unverified",
+      "Finding": "Published support range ends at 42.20.x; no explicit author claim for exact 42.21.0 was found.",
+      "Action": "Retain pending downloaded metadata check and runtime crafting test.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3540503606"
+    },
+    {
+      "ModIds": [
+        "VB_CommonSense"
+      ],
+      "Classification": "author-limited-multiplayer",
+      "Finding": "Author describes multiplayer as a work in progress that mostly works. Build 42.20+ support does not prove every feature is reliable in 42.21 multiplayer.",
+      "Action": "Keep with an explicit limitation and test overlapping bandage, flashlight and magazine features.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3750253491"
+    },
+    {
+      "ModIds": [
+        "VanillaOutfitsExpanded",
+        "SpnOpenCloth"
+      ],
+      "Classification": "author-documented-feature-overlap",
+      "Finding": "Vanilla Outfits author says Open Jackets does not yet support its new items/textures; opening or rolling affected clothing may restore vanilla textures. Tomb's body is compatible with some female clothing clipping.",
+      "Action": "Keep both with clothing visual test; do not label a complete hard conflict.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3783094058"
+    },
+    {
+      "ModIds": [
+        "SpnOpenCloth",
+        "FH"
+      ],
+      "Classification": "optional-feature-dependency",
+      "Finding": "Open Jackets author requires Fluffy Hair for opened hoodies. Other jacket features do not require that optional hairstyle pack.",
+      "Action": "If FH is disabled, explain opened hoodies are unavailable rather than adding FH as a universal hard requirement.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2812326159"
+    },
+    {
+      "ModIds": [
+        "SPNCCDetailsHD"
+      ],
+      "Classification": "author-texture-requirement",
+      "Finding": "Author requires matching 512x512 body textures and warns not to use HD details with vanilla 256 textures. TombBody alone changes models and does not supply the missing texture pack.",
+      "Action": "Keep SPNCCDetailsHD excluded when using vanilla 256 textures. Restart clients after body retexture changes.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3414634809"
+    },
+    {
+      "ModIds": [
+        "SPNCC"
+      ],
+      "Classification": "client-initialization-requirement",
+      "Finding": "Author requires every multiplayer player to enable the framework and body retextures in the main menu before joining; texture size must match installed body textures.",
+      "Action": "Install client main-menu preset, close/restart game after changes, and document graphics texture requirement for the chosen variant.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3414634809"
+    },
+    {
+      "ModIds": [
+        "CleanHotBar",
+        "MinimalHotbar"
+      ],
+      "Classification": "author-supported-combination",
+      "Finding": "Clean Hotbar author links Minimal Hotbar for optional auto-hide; the pair should not be excluded merely because both concern the hotbar.",
+      "Action": "Keep both and load CleanHotBar near the end as its author recommends.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3461263912"
+    },
+    {
+      "ModIds": [
+        "CleanUI",
+        "EURY_CONTAINERS"
+      ],
+      "Classification": "author-supported-combination-with-feature-limit",
+      "Finding": "Current CleanUI author lists Better Containers (Workshop 3586216562) as tested compatible. Better Containers author separately explains multiplayer world-loot nested containers have a networking limitation; player-inventory nesting is supported.",
+      "Action": "Keep pair; report nesting limitation. Do not turn earlier uncertain comments into a confirmed conflict.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3437629766",
+      "AdditionalSource": "https://steamcommunity.com/sharedfiles/filedetails/?id=3586216562"
+    },
+    {
+      "ModIds": [
+        "FittedBarricades"
+      ],
+      "Classification": "dedicated-server-unverified",
+      "Finding": "Author tested multiplayer and targets 42.20/42.21 but explicitly had not tried a dedicated server.",
+      "Action": "Retain with dedicated-server barricade interaction test.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3795414660"
+    },
+    {
+      "ModIds": [
+        "ImmersiveCarsDecay",
+        "TimeDecreasesCarConditionB42"
+      ],
+      "Classification": "inferred-balance-overlap",
+      "Finding": "Immersive Cars applies recurring decay and simulated initial damage; Time Decreases Car Condition damages parts when vehicles first spawn in unexplored areas. Both can reduce initial condition; no author confirmed hard conflict was found.",
+      "Action": "Keep with sandbox tuning and vehicle-condition test rather than hard incompatibility.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3495105059",
+      "AdditionalSource": "https://steamcommunity.com/sharedfiles/filedetails/?id=3448375286"
+    },
+    {
+      "ModIds": [
+        "BarricadedWorld"
+      ],
+      "Classification": "target-build-unverified",
+      "Finding": "Requested Workshop item 2696986935 is the original with a December 2024 update. A separate continuation fork 3529472651 advertises Build 42 multiplayer, but no explicit exact 42.21 author support for the original was found.",
+      "Action": "Keep requested mapping unless transparently replacing it; do not silently rewrite to the continuation fork.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2696986935",
+      "AdditionalSource": "https://steamcommunity.com/sharedfiles/filedetails/?id=3529472651"
+    },
+    {
+      "ModIds": [
+        "2925034918/EasyLaundry"
+      ],
+      "Classification": "target-build-unverified",
+      "Finding": "Requested original has no current explicit exact 42.21 author support. Users refer to a separate 42.20 fork; user comments alone do not verify a safe replacement.",
+      "Action": "Keep requested mapping and test washer behavior; do not silently substitute forks.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2925034918"
+    },
+    {
+      "ModIds": [
+        "Buttstroke"
+      ],
+      "Classification": "removed-conflict",
+      "Finding": "Original exclusion referred to TacHoldFork, which is no longer in the new requested list. No current author-supported reason to retain that old exclusion was found.",
+      "Action": "Re-enable Buttstroke and remove obsolete TacHold conflicts; exact 42.21 animation behavior still needs runtime test.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3394044313"
+    },
+    {
+      "ModIds": [
+        "BetterGeneratorInfo"
+      ],
+      "Classification": "obsolete-workaround",
+      "Finding": "Page contains a workaround about LuaChecksum from older multiplayer versions. That is not a reason to automatically disable checksums on the current server.",
+      "Action": "Leave checksum protection enabled and validate actual installed files.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3576056135"
+    },
+    {
+      "ModIds": [
+        "PFHDTrueCargo"
+      ],
+      "Classification": "dedicated-server-unverified",
+      "Finding": "Author says the server layout design is multiplayer ready but not yet tested on a server; dedicated thrown-car spill has a fallback. KI5 cars were used in visual testing, with possible missing panels.",
+      "Action": "Exclude under the same conservative author-untested multiplayer rule.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3806955469"
+    },
+    {
+      "ModIds": [
+        "OverTheShoulder"
+      ],
+      "Classification": "dedicated-server-unverified",
+      "Finding": "Author tested exact 42.21 in single player and only startup on in-game host with one player; animation visibility to other players is unknown. Fancy Handwork 42.21 requires a separate unofficial fix if enabled.",
+      "Action": "Exclude under conservative author-untested multiplayer rule; do not silently add an unofficial patch.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3808805481"
+    },
+    {
+      "ModIds": [
+        "DG_MIVehicles"
+      ],
+      "Classification": "existing-world-action",
+      "Finding": "Author explicitly advises against adding this to an existing world because existing vehicle doors, hoods and trunks will open. Opening visuals apply only to animated vehicles.",
+      "Action": "Use a fresh test world first; show the author requirement in setup actions.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3162566044"
+    },
+    {
+      "ModIds": [
+        "MiniHealthPanel",
+        "NeatUI_Framework"
+      ],
+      "Classification": "author-documented-user-interface-workaround",
+      "Finding": "Mini Health Panel author says its one-time update notice may not be dismissible while a UI modification such as NeatUI Framework is enabled.",
+      "Action": "If the notice cannot close, temporarily disable UI mods, dismiss it once, restore the preset and restart.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2866258937"
+    },
+    {
+      "ModIds": [
+        "P4HasBeenRead"
+      ],
+      "Classification": "known-multiplayer-feature-limitation",
+      "Finding": "Author reports vanilla Build 42.20 map-read history does not persist after reconnect; maps can appear unread again.",
+      "Action": "Disable map status markers if affected; do not treat every read marker as fully persistent.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2544353492"
+    },
+    {
+      "ModIds": [
+        "ItIsOfInterestToMe"
+      ],
+      "Classification": "known-multiplayer-feature-limitation",
+      "Finding": "Author says notes are generated on each client, so different players can see different text for the same note.",
+      "Action": "Keep with documented unsynchronized note-text limitation.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3796373365"
+    },
+    {
+      "ModIds": [
+        "TrueWeight"
+      ],
+      "Classification": "author-documented-item-overlap",
+      "Finding": "Author uses partial ID/category matching and explicitly warns weights of other mods' items may also be affected.",
+      "Action": "Test gun/food/container carrying weights rather than treating its changes as limited to vanilla items.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3768669395"
+    },
+    {
+      "ModIds": [
+        "VehicleRepairOverhaul",
+        "better-auto-mechanics"
+      ],
+      "Classification": "author-supported-combination",
+      "Finding": "Better Auto Mechanics author explicitly lists Vehicle Repair Overhaul and KI5 as compatible.",
+      "Action": "Keep pair; load repair base after vehicles as its author requests.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3635856965"
+    }
+  ],
+  "MetadataSources": [
+    {
+      "Source": "https://steamcommunity.com/workshop/filedetails/discussion/3423660713/592888629473368243/",
+      "Finding": "Sorter author reads custom loadAfter/loadBefore/incompatibleMods/loadFirst/loadLast from common/mod.info; version mod.info native fields are loadModAfter/loadModBefore/incompatible. Do not confuse common with legacy Build 41 root mod.info.",
+      "Recommendation": "Read version game metadata and separately include common sorting extensions; recognize both key families without treating unsupported category sorting as a global first/last rule."
+    },
+    {
+      "Source": "https://theindiestone.com/forums/topic/97781-title-manual-mod-load-order-mods-line-not-respected-in-dedicated-mp-servers-loadafter-required-as-a-workaround-build-4220/",
+      "Finding": "User report on official forum concerns backslash-prefixed loadAfter metadata and server order, not proof of required backslashes in Mods=; its Mods= example uses plain IDs.",
+      "Recommendation": "Do not cite this as official mandatory Mods= format or proof of exact 42.21 server ordering."
+    },
+    {
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3437629766",
+      "Finding": "Current 42.21-compatible author's server example uses Mods=NeatUI_Framework;CleanUI.",
+      "Recommendation": "Plain IDs have current author support; leading-backslash server formatting has other empirical reports but is not established here as the sole official syntax."
+    },
+    {
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3776551449",
+      "Finding": "Guide author's direct 42.20 code inspection reports ChooseGameInfo.readModInfoAux prefers version/mod.info and uses common/mod.info only as a fallback. Common and version game metadata therefore should not be merged wholesale.",
+      "Recommendation": "Use selected version id/require/version limits, or common metadata only if no version mod.info exists; include common custom sorter keys separately."
+    }
+  ],
+  "ReviewLimitations": [
+    "Workshop author descriptions are compatibility evidence, not execution tests.",
+    "Not every retained item explicitly certifies exact 42.21.0 or dedicated multiplayer.",
+    "Steam's scraped generic removed/incompatible banner appears on many valid items and was not used as a real mod removal verdict.",
+    "No Windows Steam client/server gameplay test was performed in this macOS environment."
+  ],
+  "PotentialReplacement": {
+    "ModId": "BarricadedWorld",
+    "OriginalWorkshopId": "2696986935",
+    "ReplacementWorkshopId": "3529472651",
+    "VerifiedReplacementModId": "BarricadedWorld",
+    "VersionMin": "42.0.0",
+    "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3529472651",
+    "MetadataSource": "https://raw.githubusercontent.com/Terrahop/zomboid-barricadedworld/main/mod/42/mod.info",
+    "Finding": "Maintainer states Build 42 multiplayer support and author tested local MP on August 26. Original claims B41/B42 but was last updated December 2024 and has no exact 42.21 certification.",
+    "Recommendation": "A transparent replacement may be justified by the requested corrected 42.21 profile; retain original source in the compatibility report and avoid subscribing both identical ModId sources."
+  },
+  "PotentialLaundryReplacement": {
+    "OriginalModId": "2925034918/EasyLaundry",
+    "OriginalWorkshopId": "2925034918",
+    "ReplacementWorkshopId": "3782237215",
+    "ReportedReplacementModId": "EasyLaundryB4220Fixed",
+    "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3782237215",
+    "Finding": "Fork author explicitly describes a 42.20 dirtiness/API fix. Exact ID is also present in cached latest page but older live view only has a user-provided ID comment. No author exact 42.21 dedicated multiplayer assurance or public metadata was verified.",
+    "Recommendation": "Conservative exclusion of the original is preferable until downloaded metadata and multiplayer testing can establish the fork. Do not label original B41-only, since author tags include B42."
+  }
+}

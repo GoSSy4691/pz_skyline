@@ -1,0 +1,3484 @@
+{
+  "SchemaVersion": 1,
+  "TargetBuild": "42.21.0",
+  "VerifiedDate": "2026-10-11",
+  "Mods": [
+    {
+      "ModId": "04vwTouran",
+      "WorkshopId": "3478633453",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 300,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3478633453",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "49powerWagon",
+      "WorkshopId": "2900580391",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 301,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2900580391",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "59meteor",
+      "WorkshopId": "2772575623",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 302,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2772575623",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "ECTO1",
+      "WorkshopId": "2772575623",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "59meteor"
+      ],
+      "LoadAfter": [],
+      "Priority": 304,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2772575623",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "62daimlerFerret",
+      "WorkshopId": "3787530735",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 304,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3787530735",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "63beetle",
+      "WorkshopId": "3005903549",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 305,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3005903549",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "63Type2Van",
+      "WorkshopId": "3041122351",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 306,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3041122351",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "65banshee",
+      "WorkshopId": "3566868353",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 307,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3566868353",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "66pontiacLeMans",
+      "WorkshopId": "3447272250",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 308,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3447272250",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "67commando",
+      "WorkshopId": "2478247379",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 309,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2478247379",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": false
+      }
+    },
+    {
+      "ModId": "67gt500",
+      "WorkshopId": "3026723485",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 310,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3026723485",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "68firebird",
+      "WorkshopId": "3258343790",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 311,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3258343790",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "69charger",
+      "WorkshopId": "3631989559",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 312,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3631989559",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "69fordMustang",
+      "WorkshopId": "3756938756",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 313,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3756938756",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "69camaro",
+      "WorkshopId": "2991201484",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 314,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2991201484",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "69fordMustangExtra",
+      "WorkshopId": "3756938756",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "69fordMustang"
+      ],
+      "LoadAfter": [],
+      "Priority": 316,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3756938756",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "69mini",
+      "WorkshopId": "2937786633",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 316,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2937786633",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "69mini_ItalianJob",
+      "WorkshopId": "2937786633",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "69mini"
+      ],
+      "LoadAfter": [],
+      "Priority": 318,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2937786633",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "69mini_MrBean",
+      "WorkshopId": "2937786633",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "69mini"
+      ],
+      "LoadAfter": [],
+      "Priority": 319,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2937786633",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "69mini_PitbullSpecial",
+      "WorkshopId": "2937786633",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "69mini"
+      ],
+      "LoadAfter": [],
+      "Priority": 320,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2937786633",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "70chevelle",
+      "WorkshopId": "3766571591",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 320,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3766571591",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "70dodge",
+      "WorkshopId": "2873290424",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 321,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2873290424",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "70fordEscort",
+      "WorkshopId": "3670063857",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 322,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3670063857",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "70barracuda",
+      "WorkshopId": "2913633066",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 323,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2913633066",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "70roadRunner",
+      "WorkshopId": "3642935062",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 324,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3642935062",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "73fordFalcon",
+      "WorkshopId": "3490370700",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 325,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3490370700",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "73fordFalconPS",
+      "WorkshopId": "3490370700",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "73fordFalcon"
+      ],
+      "LoadAfter": [],
+      "Priority": 327,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3490370700",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "73nissanGTR",
+      "WorkshopId": "3743371090",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 327,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3743371090",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "75grandPrix",
+      "WorkshopId": "3213391371",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 328,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3213391371",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "76chevyKseriesExpanded",
+      "WorkshopId": "3161951724",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "76chevyKseries"
+      ],
+      "LoadAfter": [],
+      "Priority": 330,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3161951724",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "76chevyKseries",
+      "WorkshopId": "3161951724",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 330,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3161951724",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "77firebird",
+      "WorkshopId": "3346905070",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 331,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3346905070",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "76chryslerNewYorker",
+      "WorkshopId": "3730833846",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 332,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3730833846",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "78amgeneralM35A2",
+      "WorkshopId": "2799152995",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 333,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2799152995",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "78amgeneralM35A2extra",
+      "WorkshopId": "2799152995",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "78amgeneralM35A2"
+      ],
+      "LoadAfter": [],
+      "Priority": 335,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2799152995",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "78amgeneralM49A2C",
+      "WorkshopId": "2799152995",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "78amgeneralM35A2"
+      ],
+      "LoadAfter": [],
+      "Priority": 336,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2799152995",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "78amgeneralM50A3",
+      "WorkshopId": "2799152995",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "78amgeneralM35A2"
+      ],
+      "LoadAfter": [],
+      "Priority": 337,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2799152995",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "78amgeneralM62",
+      "WorkshopId": "2799152995",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "78amgeneralM35A2"
+      ],
+      "LoadAfter": [],
+      "Priority": 338,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2799152995",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "79camaro",
+      "WorkshopId": "3703948448",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 338,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3703948448",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "80manKat1",
+      "WorkshopId": "3248388837",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 339,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3248388837",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": false
+      }
+    },
+    {
+      "ModId": "81deloreanDMC12",
+      "WorkshopId": "3253385114",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 340,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3253385114",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "81deloreanDMC12BTTF",
+      "WorkshopId": "3253385114",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "81deloreanDMC12"
+      ],
+      "LoadAfter": [],
+      "Priority": 342,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3253385114",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "82jeepJ10",
+      "WorkshopId": "2886832257",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 342,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2886832257",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "82jeepJ10t",
+      "WorkshopId": "2886832257",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "82jeepJ10"
+      ],
+      "LoadAfter": [],
+      "Priority": 344,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2886832257",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "82oshkoshM911",
+      "WorkshopId": "2618213077",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 344,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2618213077",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "82firebird",
+      "WorkshopId": "3320947974",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 345,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3320947974",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "82firebirdKITT",
+      "WorkshopId": "3320947974",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "82firebird"
+      ],
+      "LoadAfter": [],
+      "Priority": 347,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3320947974",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "82porsche911",
+      "WorkshopId": "3379334330",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 347,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3379334330",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "83amgeneralM923",
+      "WorkshopId": "2811383142",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 348,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2811383142",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "83amgeneralM923extra",
+      "WorkshopId": "2811383142",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "83amgeneralM923"
+      ],
+      "LoadAfter": [],
+      "Priority": 350,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Legacy optional texture ID is absent from the current author Mod ID list; keep disabled until downloaded Build42.21 metadata verifies it.",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2811383142",
+      "Evidence": {
+        "Mapping": "Parent Workshop item verified; this legacy optional Mod ID is not listed in the latest author description and needs downloaded metadata confirmation.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "83gmcGseriesVans",
+      "WorkshopId": "3799732653",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 350,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3799732653",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "83gmcVanduraATeam",
+      "WorkshopId": "3799732653",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "83gmcGseriesVans"
+      ],
+      "LoadAfter": [],
+      "Priority": 352,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3799732653",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "84buickElectra",
+      "WorkshopId": "3596903773",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 352,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3596903773",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "84cadillacDeVille",
+      "WorkshopId": "3592777775",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 353,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3592777775",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "84gageV300",
+      "WorkshopId": "3171184800",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 354,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3171184800",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "84corvette",
+      "WorkshopId": "3684254299",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 355,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3684254299",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "84merc",
+      "WorkshopId": "2805630347",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 356,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2805630347",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "84jeepXJ",
+      "WorkshopId": "3409287192",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 357,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3409287192",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "84oldsmobile98",
+      "WorkshopId": "3601417745",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 358,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3601417745",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": false
+      }
+    },
+    {
+      "ModId": "85buickLeSabre",
+      "WorkshopId": "3418252689",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 359,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3418252689",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "85chevyCaprice",
+      "WorkshopId": "3413704851",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 360,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3413704851",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "85chevyStepVan",
+      "WorkshopId": "3614034284",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 361,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3614034284",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "85chevyStepVanexpanded",
+      "WorkshopId": "3614034284",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "85chevyStepVan"
+      ],
+      "LoadAfter": [],
+      "Priority": 363,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3614034284",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "85oldsmobileDelta88",
+      "WorkshopId": "3418253716",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 363,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3418253716",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "85pontiacParisienne",
+      "WorkshopId": "3413706334",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 364,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3413706334",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "86chevyCUCV",
+      "WorkshopId": "3428008364",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 365,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3428008364",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "86fordE150",
+      "WorkshopId": "2870394916",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 366,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2870394916",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "86fordE150expanded",
+      "WorkshopId": "2870394916",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "86fordE150"
+      ],
+      "LoadAfter": [],
+      "Priority": 368,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2870394916",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "86fordE150dnd",
+      "WorkshopId": "2870394916",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "86fordE150"
+      ],
+      "LoadAfter": [],
+      "Priority": 369,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2870394916",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "86fordE150mm",
+      "WorkshopId": "2870394916",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "86fordE150"
+      ],
+      "LoadAfter": [],
+      "Priority": 370,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2870394916",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "86fordE150pd",
+      "WorkshopId": "2870394916",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "86fordE150"
+      ],
+      "LoadAfter": [],
+      "Priority": 371,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2870394916",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "86oshkoshP19A",
+      "WorkshopId": "2566953935",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 371,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2566953935",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "87buickRegal",
+      "WorkshopId": "3226885926",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 372,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3226885926",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "87chevySuburban",
+      "WorkshopId": "3196180339",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 373,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3196180339",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "87fordB700",
+      "WorkshopId": "3110911330",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 374,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3110911330",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "87toyotaCorolla",
+      "WorkshopId": "3779315249",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 375,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3779315249",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "87toyotaMR2",
+      "WorkshopId": "3052360250",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 376,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3052360250",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "88chevyS10",
+      "WorkshopId": "2886832936",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 377,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2886832936",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "88toyotaHilux",
+      "WorkshopId": "3435796523",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 378,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3435796523",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "89dodgeCaravan",
+      "WorkshopId": "3034636011",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 379,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3034636011",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "89fordBronco",
+      "WorkshopId": "2886833398",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 380,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2886833398",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "89trooper",
+      "WorkshopId": "2932549988",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 381,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2932549988",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "89defender",
+      "WorkshopId": "3570973322",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 382,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3570973322",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "89volvo200",
+      "WorkshopId": "3292659291",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 383,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3292659291",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "90bmwE30",
+      "WorkshopId": "3110913021",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 384,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3110913021",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "90fordF350ambulance",
+      "WorkshopId": "2952802178",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 385,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2952802178",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "90pierceArrow",
+      "WorkshopId": "2942793445",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 386,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2942793445",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "91fordLTD",
+      "WorkshopId": "3366300557",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 387,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3366300557",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "91fordRanger",
+      "WorkshopId": "3539691958",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 388,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3539691958",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "91geoMetro",
+      "WorkshopId": "3008795514",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 389,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3008795514",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "91lexusLS400",
+      "WorkshopId": "3770890864",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 390,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3770890864",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "91nissan240sx",
+      "WorkshopId": "3504401781",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 391,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3504401781",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "91range",
+      "WorkshopId": "2409333430",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 392,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2409333430",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "92amgeneralM998",
+      "WorkshopId": "2642541073",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 393,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2642541073",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "92amgeneralM998extra",
+      "WorkshopId": "2642541073",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "92amgeneralM998"
+      ],
+      "LoadAfter": [],
+      "Priority": 395,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Legacy optional texture ID is absent from the current author Mod ID list; keep disabled until downloaded Build42.21 metadata verifies it.",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2642541073",
+      "Evidence": {
+        "Mapping": "Parent Workshop item verified; this legacy optional Mod ID is not listed in the latest author description and needs downloaded metadata confirmation.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "92fordCVPI",
+      "WorkshopId": "2962175696",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 395,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2962175696",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "92jeepYJ",
+      "WorkshopId": "3287727378",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 396,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3287727378",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "92jeepYJJP18",
+      "WorkshopId": "3287727378",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "92jeepYJ"
+      ],
+      "LoadAfter": [],
+      "Priority": 398,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3287727378",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "92nissanGTR",
+      "WorkshopId": "2846036306",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 398,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2846036306",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "92vwGolfMk2",
+      "WorkshopId": "3812024929",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 399,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3812024929",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "93chevySuburban",
+      "WorkshopId": "3152529790",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 400,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152529790",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "93chevySuburbanExpanded",
+      "WorkshopId": "3152529790",
+      "Aliases": [],
+      "Requires": [
+        "damnlib",
+        "93chevySuburban"
+      ],
+      "LoadAfter": [],
+      "Priority": 402,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3152529790",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "93fordElgin",
+      "WorkshopId": "2969343830",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 402,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2969343830",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "93fordF350",
+      "WorkshopId": "3073430075",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 403,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3073430075",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "93mustangSSP",
+      "WorkshopId": "3001592312",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 404,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3001592312",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "93fordTaurus",
+      "WorkshopId": "3088951320",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 405,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3088951320",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "93townCar",
+      "WorkshopId": "2932547723",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 406,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2932547723",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author Workshop item is tagged Build42 and included in the KI5 multiplayer collection; no exact42.21 runtime test.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "95impreza",
+      "WorkshopId": "3647735736",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 407,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3647735736",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "96lancerEVO",
+      "WorkshopId": "3647736504",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 408,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3647736504",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "96saturnSseries",
+      "WorkshopId": "3679880253",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 409,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3679880253",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "98stagea",
+      "WorkshopId": "3315443103",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 410,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3315443103",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "97bushmaster",
+      "WorkshopId": "2897390033",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 411,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2897390033",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "99fordCVPI",
+      "WorkshopId": "2971246021",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 412,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2971246021",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "close-the-trunk",
+      "WorkshopId": "3262467691",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Priority": 413,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Original author description only declares multiplayer support for Build41; Build42 multiplayer item loss reports exist. Hold back pending a Build42.21 dedicated-server test.",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3262467691",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Package metadata and author declarations checked; this full 294-mod combination has not been run."
+      }
+    },
+    {
+      "ModId": "isoContainers",
+      "WorkshopId": "2625625421",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 414,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2625625421",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "KI5campers",
+      "WorkshopId": "3670064951",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 415,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3670064951",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "NepEngineColor",
+      "WorkshopId": "2975204120",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Priority": 416,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Author says this is now a vanilla Build42 feature, so it is redundant.",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2975204120",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Package metadata and author declarations checked; this full 294-mod combination has not been run."
+      }
+    },
+    {
+      "ModId": "NepBatteryColor",
+      "WorkshopId": "2973053380",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Priority": 417,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Author says this is now a vanilla Build42 feature, so it is redundant.",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2973053380",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Package metadata and author declarations checked; this full 294-mod combination has not been run."
+      }
+    },
+    {
+      "ModId": "NepHighBeams",
+      "WorkshopId": "3438126404",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Priority": 418,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Author states Build42.13 testing was singleplayer only; hold this optional lighting change back until Build42.21 multiplayer is tested.",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3438126404",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Package metadata and author declarations checked; this full 294-mod combination has not been run."
+      }
+    },
+    {
+      "ModId": "OffroadGoBrrr",
+      "WorkshopId": "3309119521",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Priority": 419,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Author labels this Build41 and deprecated; Build42 implements the intended off-road behavior in the base game.",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3309119521",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Package metadata and author declarations checked; this full 294-mod combination has not been run."
+      }
+    },
+    {
+      "ModId": "PushVehicle",
+      "WorkshopId": "3780639614",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Priority": 420,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Current author title explicitly supports Build42.21+ multiplayer; author describes synchronized vehicle movement.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3780639614",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Package metadata and author declarations checked; this full 294-mod combination has not been run."
+      }
+    },
+    {
+      "ModId": "YAPZLib",
+      "WorkshopId": "3624971238",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Priority": 3,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Load shared library before VMZNEW, VVR, SpecLoot and KI5minifixes.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3624971238",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Package metadata and author declarations checked; this full 294-mod combination has not been run."
+      }
+    },
+    {
+      "ModId": "VMZNEW",
+      "WorkshopId": "3436499337",
+      "Aliases": [],
+      "Requires": [
+        "YAPZLib"
+      ],
+      "LoadAfter": [
+        "04vwTouran",
+        "49powerWagon",
+        "59meteor",
+        "ECTO1",
+        "62daimlerFerret",
+        "63beetle",
+        "63Type2Van",
+        "65banshee",
+        "66pontiacLeMans",
+        "67commando",
+        "67gt500",
+        "68firebird",
+        "69charger",
+        "69fordMustang",
+        "69camaro",
+        "69fordMustangExtra",
+        "69mini",
+        "69mini_ItalianJob",
+        "69mini_MrBean",
+        "69mini_PitbullSpecial",
+        "70chevelle",
+        "70dodge",
+        "70fordEscort",
+        "70barracuda",
+        "70roadRunner",
+        "73fordFalcon",
+        "73fordFalconPS",
+        "73nissanGTR",
+        "75grandPrix",
+        "76chevyKseriesExpanded",
+        "76chevyKseries",
+        "77firebird",
+        "76chryslerNewYorker",
+        "78amgeneralM35A2",
+        "78amgeneralM35A2extra",
+        "78amgeneralM49A2C",
+        "78amgeneralM50A3",
+        "78amgeneralM62",
+        "79camaro",
+        "80manKat1",
+        "81deloreanDMC12",
+        "81deloreanDMC12BTTF",
+        "82jeepJ10",
+        "82jeepJ10t",
+        "82oshkoshM911",
+        "82firebird",
+        "82firebirdKITT",
+        "82porsche911",
+        "83amgeneralM923",
+        "83amgeneralM923extra",
+        "83gmcGseriesVans",
+        "83gmcVanduraATeam",
+        "84buickElectra",
+        "84cadillacDeVille",
+        "84gageV300",
+        "84corvette",
+        "84merc",
+        "84jeepXJ",
+        "84oldsmobile98",
+        "85buickLeSabre",
+        "85chevyCaprice",
+        "85chevyStepVan",
+        "85chevyStepVanexpanded",
+        "85oldsmobileDelta88",
+        "85pontiacParisienne",
+        "86chevyCUCV",
+        "86fordE150",
+        "86fordE150expanded",
+        "86fordE150dnd",
+        "86fordE150mm",
+        "86fordE150pd",
+        "86oshkoshP19A",
+        "87buickRegal",
+        "87chevySuburban",
+        "87fordB700",
+        "87toyotaCorolla",
+        "87toyotaMR2",
+        "88chevyS10",
+        "88toyotaHilux",
+        "89dodgeCaravan",
+        "89fordBronco",
+        "89trooper",
+        "89defender",
+        "89volvo200",
+        "90bmwE30",
+        "90fordF350ambulance",
+        "90pierceArrow",
+        "91fordLTD",
+        "91fordRanger",
+        "91geoMetro",
+        "91lexusLS400",
+        "91nissan240sx",
+        "91range",
+        "92amgeneralM998",
+        "92amgeneralM998extra",
+        "92fordCVPI",
+        "92jeepYJ",
+        "92jeepYJJP18",
+        "92nissanGTR",
+        "92vwGolfMk2",
+        "93chevySuburban",
+        "93chevySuburbanExpanded",
+        "93fordElgin",
+        "93fordF350",
+        "93mustangSSP",
+        "93fordTaurus",
+        "93townCar",
+        "95impreza",
+        "96lancerEVO",
+        "96saturnSseries",
+        "98stagea",
+        "97bushmaster",
+        "99fordCVPI",
+        "isoContainers",
+        "KI5campers",
+        "KI5trailers"
+      ],
+      "Priority": 760,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author says load after vehicles to restrict military vehicles to military zones. Existing saves get new spawns only in unexplored areas; KI5minifixes was suggested for semitrailer stories but is currently held back for a known issue.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3436499337",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Package metadata and author declarations checked; this full 294-mod combination has not been run."
+      }
+    },
+    {
+      "ModId": "VVR",
+      "WorkshopId": "3423424077",
+      "Aliases": [],
+      "Requires": [
+        "YAPZLib"
+      ],
+      "LoadAfter": [
+        "04vwTouran",
+        "49powerWagon",
+        "59meteor",
+        "ECTO1",
+        "62daimlerFerret",
+        "63beetle",
+        "63Type2Van",
+        "65banshee",
+        "66pontiacLeMans",
+        "67commando",
+        "67gt500",
+        "68firebird",
+        "69charger",
+        "69fordMustang",
+        "69camaro",
+        "69fordMustangExtra",
+        "69mini",
+        "69mini_ItalianJob",
+        "69mini_MrBean",
+        "69mini_PitbullSpecial",
+        "70chevelle",
+        "70dodge",
+        "70fordEscort",
+        "70barracuda",
+        "70roadRunner",
+        "73fordFalcon",
+        "73fordFalconPS",
+        "73nissanGTR",
+        "75grandPrix",
+        "76chevyKseriesExpanded",
+        "76chevyKseries",
+        "77firebird",
+        "76chryslerNewYorker",
+        "78amgeneralM35A2",
+        "78amgeneralM35A2extra",
+        "78amgeneralM49A2C",
+        "78amgeneralM50A3",
+        "78amgeneralM62",
+        "79camaro",
+        "80manKat1",
+        "81deloreanDMC12",
+        "81deloreanDMC12BTTF",
+        "82jeepJ10",
+        "82jeepJ10t",
+        "82oshkoshM911",
+        "82firebird",
+        "82firebirdKITT",
+        "82porsche911",
+        "83amgeneralM923",
+        "83amgeneralM923extra",
+        "83gmcGseriesVans",
+        "83gmcVanduraATeam",
+        "84buickElectra",
+        "84cadillacDeVille",
+        "84gageV300",
+        "84corvette",
+        "84merc",
+        "84jeepXJ",
+        "84oldsmobile98",
+        "85buickLeSabre",
+        "85chevyCaprice",
+        "85chevyStepVan",
+        "85chevyStepVanexpanded",
+        "85oldsmobileDelta88",
+        "85pontiacParisienne",
+        "86chevyCUCV",
+        "86fordE150",
+        "86fordE150expanded",
+        "86fordE150dnd",
+        "86fordE150mm",
+        "86fordE150pd",
+        "86oshkoshP19A",
+        "87buickRegal",
+        "87chevySuburban",
+        "87fordB700",
+        "87toyotaCorolla",
+        "87toyotaMR2",
+        "88chevyS10",
+        "88toyotaHilux",
+        "89dodgeCaravan",
+        "89fordBronco",
+        "89trooper",
+        "89defender",
+        "89volvo200",
+        "90bmwE30",
+        "90fordF350ambulance",
+        "90pierceArrow",
+        "91fordLTD",
+        "91fordRanger",
+        "91geoMetro",
+        "91lexusLS400",
+        "91nissan240sx",
+        "91range",
+        "92amgeneralM998",
+        "92amgeneralM998extra",
+        "92fordCVPI",
+        "92jeepYJ",
+        "92jeepYJJP18",
+        "92nissanGTR",
+        "92vwGolfMk2",
+        "93chevySuburban",
+        "93chevySuburbanExpanded",
+        "93fordElgin",
+        "93fordF350",
+        "93mustangSSP",
+        "93fordTaurus",
+        "93townCar",
+        "95impreza",
+        "96lancerEVO",
+        "96saturnSseries",
+        "98stagea",
+        "97bushmaster",
+        "99fordCVPI",
+        "isoContainers",
+        "KI5campers",
+        "KI5trailers"
+      ],
+      "Priority": 780,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author warns adding to existing saves replaces loot in vanilla vehicles. Keep vanilla vehicle spawning enabled; the mod replaces them at spawn.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3423424077",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Package metadata and author declarations checked; this full 294-mod combination has not been run."
+      }
+    },
+    {
+      "ModId": "SpecLoot",
+      "WorkshopId": "3457132019",
+      "Aliases": [],
+      "Requires": [
+        "YAPZLib",
+        "damnlib"
+      ],
+      "LoadAfter": [
+        "04vwTouran",
+        "49powerWagon",
+        "59meteor",
+        "ECTO1",
+        "62daimlerFerret",
+        "63beetle",
+        "63Type2Van",
+        "65banshee",
+        "66pontiacLeMans",
+        "67commando",
+        "67gt500",
+        "68firebird",
+        "69charger",
+        "69fordMustang",
+        "69camaro",
+        "69fordMustangExtra",
+        "69mini",
+        "69mini_ItalianJob",
+        "69mini_MrBean",
+        "69mini_PitbullSpecial",
+        "70chevelle",
+        "70dodge",
+        "70fordEscort",
+        "70barracuda",
+        "70roadRunner",
+        "73fordFalcon",
+        "73fordFalconPS",
+        "73nissanGTR",
+        "75grandPrix",
+        "76chevyKseriesExpanded",
+        "76chevyKseries",
+        "77firebird",
+        "76chryslerNewYorker",
+        "78amgeneralM35A2",
+        "78amgeneralM35A2extra",
+        "78amgeneralM49A2C",
+        "78amgeneralM50A3",
+        "78amgeneralM62",
+        "79camaro",
+        "80manKat1",
+        "81deloreanDMC12",
+        "81deloreanDMC12BTTF",
+        "82jeepJ10",
+        "82jeepJ10t",
+        "82oshkoshM911",
+        "82firebird",
+        "82firebirdKITT",
+        "82porsche911",
+        "83amgeneralM923",
+        "83amgeneralM923extra",
+        "83gmcGseriesVans",
+        "83gmcVanduraATeam",
+        "84buickElectra",
+        "84cadillacDeVille",
+        "84gageV300",
+        "84corvette",
+        "84merc",
+        "84jeepXJ",
+        "84oldsmobile98",
+        "85buickLeSabre",
+        "85chevyCaprice",
+        "85chevyStepVan",
+        "85chevyStepVanexpanded",
+        "85oldsmobileDelta88",
+        "85pontiacParisienne",
+        "86chevyCUCV",
+        "86fordE150",
+        "86fordE150expanded",
+        "86fordE150dnd",
+        "86fordE150mm",
+        "86fordE150pd",
+        "86oshkoshP19A",
+        "87buickRegal",
+        "87chevySuburban",
+        "87fordB700",
+        "87toyotaCorolla",
+        "87toyotaMR2",
+        "88chevyS10",
+        "88toyotaHilux",
+        "89dodgeCaravan",
+        "89fordBronco",
+        "89trooper",
+        "89defender",
+        "89volvo200",
+        "90bmwE30",
+        "90fordF350ambulance",
+        "90pierceArrow",
+        "91fordLTD",
+        "91fordRanger",
+        "91geoMetro",
+        "91lexusLS400",
+        "91nissan240sx",
+        "91range",
+        "92amgeneralM998",
+        "92amgeneralM998extra",
+        "92fordCVPI",
+        "92jeepYJ",
+        "92jeepYJJP18",
+        "92nissanGTR",
+        "92vwGolfMk2",
+        "93chevySuburban",
+        "93chevySuburbanExpanded",
+        "93fordElgin",
+        "93fordF350",
+        "93mustangSSP",
+        "93fordTaurus",
+        "93townCar",
+        "95impreza",
+        "96lancerEVO",
+        "96saturnSseries",
+        "98stagea",
+        "97bushmaster",
+        "99fordCVPI",
+        "isoContainers",
+        "KI5campers",
+        "KI5trailers"
+      ],
+      "Priority": 750,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author says after all KI5 vehicles. Requires damnlib and YAPZLib. Loot/container behavior needs a real server smoke test.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3457132019",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Package metadata and author declarations checked; this full 294-mod combination has not been run."
+      }
+    },
+    {
+      "ModId": "KI5minifixes",
+      "WorkshopId": "3740300378",
+      "Aliases": [],
+      "Requires": [
+        "YAPZLib",
+        "damnlib"
+      ],
+      "LoadAfter": [
+        "04vwTouran",
+        "49powerWagon",
+        "59meteor",
+        "ECTO1",
+        "62daimlerFerret",
+        "63beetle",
+        "63Type2Van",
+        "65banshee",
+        "66pontiacLeMans",
+        "67commando",
+        "67gt500",
+        "68firebird",
+        "69charger",
+        "69fordMustang",
+        "69camaro",
+        "69fordMustangExtra",
+        "69mini",
+        "69mini_ItalianJob",
+        "69mini_MrBean",
+        "69mini_PitbullSpecial",
+        "70chevelle",
+        "70dodge",
+        "70fordEscort",
+        "70barracuda",
+        "70roadRunner",
+        "73fordFalcon",
+        "73fordFalconPS",
+        "73nissanGTR",
+        "75grandPrix",
+        "76chevyKseriesExpanded",
+        "76chevyKseries",
+        "77firebird",
+        "76chryslerNewYorker",
+        "78amgeneralM35A2",
+        "78amgeneralM35A2extra",
+        "78amgeneralM49A2C",
+        "78amgeneralM50A3",
+        "78amgeneralM62",
+        "79camaro",
+        "80manKat1",
+        "81deloreanDMC12",
+        "81deloreanDMC12BTTF",
+        "82jeepJ10",
+        "82jeepJ10t",
+        "82oshkoshM911",
+        "82firebird",
+        "82firebirdKITT",
+        "82porsche911",
+        "83amgeneralM923",
+        "83amgeneralM923extra",
+        "83gmcGseriesVans",
+        "83gmcVanduraATeam",
+        "84buickElectra",
+        "84cadillacDeVille",
+        "84gageV300",
+        "84corvette",
+        "84merc",
+        "84jeepXJ",
+        "84oldsmobile98",
+        "85buickLeSabre",
+        "85chevyCaprice",
+        "85chevyStepVan",
+        "85chevyStepVanexpanded",
+        "85oldsmobileDelta88",
+        "85pontiacParisienne",
+        "86chevyCUCV",
+        "86fordE150",
+        "86fordE150expanded",
+        "86fordE150dnd",
+        "86fordE150mm",
+        "86fordE150pd",
+        "86oshkoshP19A",
+        "87buickRegal",
+        "87chevySuburban",
+        "87fordB700",
+        "87toyotaCorolla",
+        "87toyotaMR2",
+        "88chevyS10",
+        "88toyotaHilux",
+        "89dodgeCaravan",
+        "89fordBronco",
+        "89trooper",
+        "89defender",
+        "89volvo200",
+        "90bmwE30",
+        "90fordF350ambulance",
+        "90pierceArrow",
+        "91fordLTD",
+        "91fordRanger",
+        "91geoMetro",
+        "91lexusLS400",
+        "91nissan240sx",
+        "91range",
+        "92amgeneralM998",
+        "92amgeneralM998extra",
+        "92fordCVPI",
+        "92jeepYJ",
+        "92jeepYJJP18",
+        "92nissanGTR",
+        "92vwGolfMk2",
+        "93chevySuburban",
+        "93chevySuburbanExpanded",
+        "93fordElgin",
+        "93fordF350",
+        "93mustangSSP",
+        "93fordTaurus",
+        "93townCar",
+        "95impreza",
+        "96lancerEVO",
+        "96saturnSseries",
+        "98stagea",
+        "97bushmaster",
+        "99fordCVPI",
+        "isoContainers",
+        "KI5campers",
+        "KI5trailers"
+      ],
+      "Priority": 730,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Current author acknowledged invalid KI5CamperJack recipe input and an update pending after KI5 updates; hold this optional patch back until the current Build42.21 package is tested.",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3740300378",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Package metadata and author declarations checked; this full 294-mod combination has not been run.",
+        "IssueSource": "https://steamcommunity.com/sharedfiles/filedetails/?id=3740300378",
+        "Issue": "Author comment acknowledges invalid Base.KI5CamperJack input and promises update after KI5; observed2026-10-11."
+      }
+    },
+    {
+      "ModId": "KI5trailers",
+      "WorkshopId": "3330403100",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [],
+      "Priority": 426,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "KI5 vehicle: library first, then base vehicle, then any optional spawn/variant modules. Current downloaded mod.info remains authoritative.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3330403100",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Author declares Build42 multiplayer support; exact42.21 runtime testing of the complete list is still required.",
+        "AuthorMultiplayerCollection": true
+      }
+    },
+    {
+      "ModId": "VSUIKI5",
+      "WorkshopId": "3501302358",
+      "Aliases": [],
+      "Requires": [
+        "damnlib"
+      ],
+      "LoadAfter": [
+        "04vwTouran",
+        "49powerWagon",
+        "59meteor",
+        "ECTO1",
+        "62daimlerFerret",
+        "63beetle",
+        "63Type2Van",
+        "65banshee",
+        "66pontiacLeMans",
+        "67commando",
+        "67gt500",
+        "68firebird",
+        "69charger",
+        "69fordMustang",
+        "69camaro",
+        "69fordMustangExtra",
+        "69mini",
+        "69mini_ItalianJob",
+        "69mini_MrBean",
+        "69mini_PitbullSpecial",
+        "70chevelle",
+        "70dodge",
+        "70fordEscort",
+        "70barracuda",
+        "70roadRunner",
+        "73fordFalcon",
+        "73fordFalconPS",
+        "73nissanGTR",
+        "75grandPrix",
+        "76chevyKseriesExpanded",
+        "76chevyKseries",
+        "77firebird",
+        "76chryslerNewYorker",
+        "78amgeneralM35A2",
+        "78amgeneralM35A2extra",
+        "78amgeneralM49A2C",
+        "78amgeneralM50A3",
+        "78amgeneralM62",
+        "79camaro",
+        "80manKat1",
+        "81deloreanDMC12",
+        "81deloreanDMC12BTTF",
+        "82jeepJ10",
+        "82jeepJ10t",
+        "82oshkoshM911",
+        "82firebird",
+        "82firebirdKITT",
+        "82porsche911",
+        "83amgeneralM923",
+        "83amgeneralM923extra",
+        "83gmcGseriesVans",
+        "83gmcVanduraATeam",
+        "84buickElectra",
+        "84cadillacDeVille",
+        "84gageV300",
+        "84corvette",
+        "84merc",
+        "84jeepXJ",
+        "84oldsmobile98",
+        "85buickLeSabre",
+        "85chevyCaprice",
+        "85chevyStepVan",
+        "85chevyStepVanexpanded",
+        "85oldsmobileDelta88",
+        "85pontiacParisienne",
+        "86chevyCUCV",
+        "86fordE150",
+        "86fordE150expanded",
+        "86fordE150dnd",
+        "86fordE150mm",
+        "86fordE150pd",
+        "86oshkoshP19A",
+        "87buickRegal",
+        "87chevySuburban",
+        "87fordB700",
+        "87toyotaCorolla",
+        "87toyotaMR2",
+        "88chevyS10",
+        "88toyotaHilux",
+        "89dodgeCaravan",
+        "89fordBronco",
+        "89trooper",
+        "89defender",
+        "89volvo200",
+        "90bmwE30",
+        "90fordF350ambulance",
+        "90pierceArrow",
+        "91fordLTD",
+        "91fordRanger",
+        "91geoMetro",
+        "91lexusLS400",
+        "91nissan240sx",
+        "91range",
+        "92amgeneralM998",
+        "92amgeneralM998extra",
+        "92fordCVPI",
+        "92jeepYJ",
+        "92jeepYJJP18",
+        "92nissanGTR",
+        "92vwGolfMk2",
+        "93chevySuburban",
+        "93chevySuburbanExpanded",
+        "93fordElgin",
+        "93fordF350",
+        "93mustangSSP",
+        "93fordTaurus",
+        "93townCar",
+        "95impreza",
+        "96lancerEVO",
+        "96saturnSseries",
+        "98stagea",
+        "97bushmaster",
+        "99fordCVPI",
+        "isoContainers",
+        "KI5campers",
+        "KI5trailers"
+      ],
+      "Priority": 740,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3501302358",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Package metadata and author declarations checked; this full 294-mod combination has not been run."
+      }
+    },
+    {
+      "ModId": "WorkingSeatbelt",
+      "WorkshopId": "3055029361",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Priority": 428,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Author acknowledged a recent game update broke the mod and suggested disabling the chime or mod; a Build42.21 bug report is open. Hold back pending an author update/test.",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3055029361",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Package metadata and author declarations checked; this full 294-mod combination has not been run.",
+        "IssueSource": "https://steamcommunity.com/sharedfiles/filedetails/?id=3055029361",
+        "Issue": "AuthorSep30 suggests disabling mod/chime until update; Oct7 comment reports a Build42.21 bug."
+      }
+    },
+    {
+      "ModId": "YouDriveISleep",
+      "WorkshopId": "2830570280",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Priority": 429,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Passenger sleeping requires sleep to be allowed by server settings. Author provides shared Build41/42 package; exact server sleep behavior still needs multiplayer testing.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2830570280",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Package metadata and author declarations checked; this full 294-mod combination has not been run."
+      }
+    },
+    {
+      "ModId": "CrashedCarsMod",
+      "WorkshopId": "1539281445",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Priority": 430,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Author labels this abandoned and says Build42 multiplayer support needs help. Build42 also requires a fresh save.",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=1539281445",
+      "Evidence": {
+        "Mapping": "Exact author Mod ID matches public Valve Workshop metadata.",
+        "CheckedDate": "2026-10-11",
+        "TargetBuild": "42.21.0",
+        "Compatibility": "Package metadata and author declarations checked; this full 294-mod combination has not been run."
+      }
+    }
+  ],
+  "Dependencies": [],
+  "OptionalAddons": [
+    {
+      "ModId": "AMGeneralTankerFunctionality",
+      "WorkshopId": "3790021065",
+      "Requires": [
+        "78amgeneralM35A2",
+        "78amgeneralM49A2C",
+        "78amgeneralM50A3"
+      ],
+      "LoadAfter": [
+        "78amgeneralM35A2",
+        "78amgeneralM49A2C",
+        "78amgeneralM50A3",
+        "86oshkoshP19A"
+      ],
+      "Priority": 735,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Optional addon outside the requested294 list; author targets42.20MP and the exact42.21 combination is untested.",
+      "Notes": "Adds gasoline/water cargo transfer to the KI5 tanker variants. Rubber Hose required for transfer. This is not a declared hard dependency of the selected vehicles.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3790021065"
+    }
+  ],
+  "UnresolvedWorkshopMappings": [],
+  "UnverifiedModIds": [
+    "83amgeneralM923extra",
+    "92amgeneralM998extra"
+  ],
+  "VehicleBaseModIds": [
+    "04vwTouran",
+    "49powerWagon",
+    "59meteor",
+    "ECTO1",
+    "62daimlerFerret",
+    "63beetle",
+    "63Type2Van",
+    "65banshee",
+    "66pontiacLeMans",
+    "67commando",
+    "67gt500",
+    "68firebird",
+    "69charger",
+    "69fordMustang",
+    "69camaro",
+    "69fordMustangExtra",
+    "69mini",
+    "69mini_ItalianJob",
+    "69mini_MrBean",
+    "69mini_PitbullSpecial",
+    "70chevelle",
+    "70dodge",
+    "70fordEscort",
+    "70barracuda",
+    "70roadRunner",
+    "73fordFalcon",
+    "73fordFalconPS",
+    "73nissanGTR",
+    "75grandPrix",
+    "76chevyKseriesExpanded",
+    "76chevyKseries",
+    "77firebird",
+    "76chryslerNewYorker",
+    "78amgeneralM35A2",
+    "78amgeneralM35A2extra",
+    "78amgeneralM49A2C",
+    "78amgeneralM50A3",
+    "78amgeneralM62",
+    "79camaro",
+    "80manKat1",
+    "81deloreanDMC12",
+    "81deloreanDMC12BTTF",
+    "82jeepJ10",
+    "82jeepJ10t",
+    "82oshkoshM911",
+    "82firebird",
+    "82firebirdKITT",
+    "82porsche911",
+    "83amgeneralM923",
+    "83amgeneralM923extra",
+    "83gmcGseriesVans",
+    "83gmcVanduraATeam",
+    "84buickElectra",
+    "84cadillacDeVille",
+    "84gageV300",
+    "84corvette",
+    "84merc",
+    "84jeepXJ",
+    "84oldsmobile98",
+    "85buickLeSabre",
+    "85chevyCaprice",
+    "85chevyStepVan",
+    "85chevyStepVanexpanded",
+    "85oldsmobileDelta88",
+    "85pontiacParisienne",
+    "86chevyCUCV",
+    "86fordE150",
+    "86fordE150expanded",
+    "86fordE150dnd",
+    "86fordE150mm",
+    "86fordE150pd",
+    "86oshkoshP19A",
+    "87buickRegal",
+    "87chevySuburban",
+    "87fordB700",
+    "87toyotaCorolla",
+    "87toyotaMR2",
+    "88chevyS10",
+    "88toyotaHilux",
+    "89dodgeCaravan",
+    "89fordBronco",
+    "89trooper",
+    "89defender",
+    "89volvo200",
+    "90bmwE30",
+    "90fordF350ambulance",
+    "90pierceArrow",
+    "91fordLTD",
+    "91fordRanger",
+    "91geoMetro",
+    "91lexusLS400",
+    "91nissan240sx",
+    "91range",
+    "92amgeneralM998",
+    "92amgeneralM998extra",
+    "92fordCVPI",
+    "92jeepYJ",
+    "92jeepYJJP18",
+    "92nissanGTR",
+    "92vwGolfMk2",
+    "93chevySuburban",
+    "93chevySuburbanExpanded",
+    "93fordElgin",
+    "93fordF350",
+    "93mustangSSP",
+    "93fordTaurus",
+    "93townCar",
+    "95impreza",
+    "96lancerEVO",
+    "96saturnSseries",
+    "98stagea",
+    "97bushmaster",
+    "99fordCVPI",
+    "isoContainers",
+    "KI5campers",
+    "KI5trailers"
+  ]
+}

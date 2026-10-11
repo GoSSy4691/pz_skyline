@@ -1,0 +1,1274 @@
+{
+  "CheckedAt": "2026-10-11",
+  "TargetBuildVersion": "42.21.0",
+  "Scope": "All 52 newly requested non-Vehicles entries; downloaded metadata and live MP play remain necessary.",
+  "Mods": [
+    {
+      "ModId": "SWMG",
+      "WorkshopId": "3722064198",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [
+        "HBVCEFb42"
+      ],
+      "Conflicts": [],
+      "Priority": 10,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author Gunworks family order: Hot Brass before Gunworks before Guns of Marz. Hot Brass itself is optional.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3722064198",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "[42.20.4MP] Gunworks Framework",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "GunsOfMarz",
+      "WorkshopId": "3722134990",
+      "Aliases": [],
+      "Requires": [
+        "SWMG"
+      ],
+      "LoadAfter": [
+        "HBVCEFb42",
+        "SWMG"
+      ],
+      "Conflicts": [
+        "MarzVanillaGuns"
+      ],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author supports Build 42.21 multiplayer and explicitly forbids enabling Vanilla Weapons Plus alongside this pack. Optional tracer effects require a Java mod and are outside this installer.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3722134990",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "[42.21MP] GoM - Guns of Marz",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "HBAmmoCraft",
+      "WorkshopId": "3610677934",
+      "Aliases": [],
+      "Requires": [
+        "HBVCEFb42"
+      ],
+      "LoadAfter": [
+        "GunsOfMarz"
+      ],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Hot Brass author currently lists crafting support for Vanilla Weapons Plus and VFE Classic; Guns of Marz crafting support is still marked as planned. Do not promise crafting for all GoM ammunition.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3610677934",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "[41/42.20.4MP] Visible Casing Ejection Framework - Hot Brass",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "HBVCEFb42",
+      "WorkshopId": "3610677934",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 10,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3610677934",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "[41/42.20.4MP] Visible Casing Ejection Framework - Hot Brass",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "HBTacReload",
+      "WorkshopId": "3610677934",
+      "Aliases": [],
+      "Requires": [
+        "HBVCEFb42"
+      ],
+      "LoadAfter": [
+        "GunsOfMarz"
+      ],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3610677934",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "[41/42.20.4MP] Visible Casing Ejection Framework - Hot Brass",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "MarzVanillaGuns",
+      "WorkshopId": "3773834525",
+      "Aliases": [],
+      "Requires": [
+        "SWMG"
+      ],
+      "LoadAfter": [
+        "HBVCEFb42",
+        "SWMG"
+      ],
+      "Conflicts": [
+        "GunsOfMarz"
+      ],
+      "Priority": 500,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Guns of Marz author explicitly forbids using Vanilla Weapons Plus alongside GunsOfMarz; keep GunsOfMarz for this profile.",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3773834525",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "[42.20.4MP] Vanilla Weapons PLUS - Gunworks Edition",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "damnlib",
+      "WorkshopId": "3171167894",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 10,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author reports Build 42.20+ SP/MP support with KI5 vehicles. Use original library, not third-party duplicate fixes.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3171167894",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "that DAMN Library",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "ContainerCapacityIndicator",
+      "WorkshopId": "3789660055",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [
+        "CleanUI",
+        "EURY_CONTAINERS"
+      ],
+      "Conflicts": [],
+      "Priority": 8500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author says no extra dependency, client UI only, designed for Build 42.20 multiplayer; container and magazine indicators do not change capacities.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3789660055",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Container Capacity Indicator [B42]",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "AatheomEMVFSM",
+      "WorkshopId": "3322066592",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author describes a Build 42 food-model positioning version and existing-save/server support. Full 42.21 pack interaction remains untested.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3322066592",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Every Missing Vanilla Food Static Model",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "FWOBenchPressTreadmill",
+      "WorkshopId": "2940354599",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [
+        "FWOFitnessWorkoutOverhaul"
+      ],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author says these two modules can run independently or together; they are not mutually exclusive. Updated name removes the old ampersand. Author lists 42.20.x support and MP fixes; 42.21 regression needs gameplay testing.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2940354599",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Fitness & Workout Overhaul",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "GenRange",
+      "WorkshopId": "2972289937",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [
+        "BetterGeneratorInfo"
+      ],
+      "Priority": 8500,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Conflicts with selected BetterGeneratorInfo: both replace the generator information/range display; BetterGeneratorInfo author explicitly excludes other generator range/fuel mods.",
+      "Notes": "BetterGeneratorInfo already supplies a power-range overlay and its author explicitly says other generator range/fuel information replacements cannot be used together. Conflict source: https://steamcommunity.com/sharedfiles/filedetails/?id=3576056135&l=greek",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2972289937",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Visible Generator Range",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "HideDebugMenu",
+      "WorkshopId": "3554048011",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Same Workshop item as removed JustHideDebugMenu, but a different module: this variant also hides build/server information. It should not be treated as an ID rename.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3554048011",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Hide Menu Debug + Remove Build Information",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "LowConditionGuns",
+      "WorkshopId": "3579180724",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [
+        "GunsOfMarz"
+      ],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author confirms B42 multiplayer support and says most gun/map mods are supported. Validate item condition initialization with GoM in the server test.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3579180724",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Low Condition Guns [B41/B42]",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "MapLegendUI",
+      "WorkshopId": "2710167561",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [
+        "darkerMap",
+        "mapmodmanager"
+      ],
+      "Conflicts": [],
+      "Priority": 8500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author states Build 42.20 stable and MP support. Use original NikGamer item2710167561, not B41 copies sharing this ModId.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2710167561",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Map Legend UI [B42\\41]",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "MinimalHotbar",
+      "WorkshopId": "3688576740",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [
+        "CleanHotBar",
+        "CleanUI",
+        "ItemCondition_KingEJ"
+      ],
+      "Conflicts": [],
+      "Priority": 11000,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author explicitly supports CleanHotBar when MinimalHotbar is loaded at the end. This is an order requirement, not a reason to disable one of the two.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3688576740",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "MinimalHotbar",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "MoodleFramework",
+      "WorkshopId": "3396446795",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 10,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Use original Build42 item3396446795. Framework2.7 removed PlayerModData.Moodles; old consumer mods may require author updates or the optional backward-compatibility bridge3789490511, whose author warns of possible MP inconsistencies.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3396446795",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Moodle Framework",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "1299328280/ToadTraitsDynamic",
+      "WorkshopId": "1299328280",
+      "Aliases": [
+        "ToadTraitsDynamic"
+      ],
+      "Requires": [
+        "1299328280/ToadTraits",
+        "UnifiedCarryWeightFramework"
+      ],
+      "LoadAfter": [
+        "KillCount"
+      ],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Legacy More Traits is no longer maintained and its author lists an unresolved multiplayer Martial Artist death-sync issue; the older ComputerPers override has not been verified against the current legacy version. Hold this family out of the conservative MP profile until tested.",
+      "Notes": "Dynamic is an addon to base MoreTraits, not a mutually exclusive alternative. Input has addon before base; base must load first. Downloaded metadata must resolve any current KillCount requirement.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=1299328280",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "More Traits [Legacy, read description]",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "1299328280/ToadTraits",
+      "WorkshopId": "1299328280",
+      "Aliases": [
+        "ToadTraits"
+      ],
+      "Requires": [
+        "UnifiedCarryWeightFramework"
+      ],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Legacy More Traits is no longer maintained and its author lists an unresolved multiplayer Martial Artist death-sync issue; the older ComputerPers override has not been verified against the current legacy version. Hold this family out of the conservative MP profile until tested.",
+      "Notes": "This is the original legacy item, not the separate repack3670009766. Current author known issues include sleeping damage, PvP Martial Artist desync, and Evasive insta-death.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=1299328280",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "More Traits [Legacy, read description]",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "UnifiedCarryWeightFramework",
+      "WorkshopId": "3682045254",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 10,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Original Build42 multiplayer library. Author says mods using UCWF can compose carry-weight changes, but unrelated mods that overwrite carry weight can still conflict.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3682045254",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Unified Carry Weight Framework (UCWF)",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "CP_MoreTraits",
+      "WorkshopId": "3587315482",
+      "Aliases": [],
+      "Requires": [
+        "1299328280/ToadTraits"
+      ],
+      "LoadAfter": [
+        "1299328280/ToadTraitsDynamic"
+      ],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Legacy More Traits is no longer maintained and its author lists an unresolved multiplayer Martial Artist death-sync issue; the older ComputerPers override has not been verified against the current legacy version. Hold this family out of the conservative MP profile until tested.",
+      "Notes": "Third-party override of MoreTraits.lua, last updated before later original-mod changes. Author lists nil-safety fixes, which do not establish current42.21 compatibility.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3587315482",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "More Traits. ComputerPers FIX",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "MutiesContextMenuIcons",
+      "WorkshopId": "3101668503",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Author explicitly says the original icon mod has not been tested on Build42 stable. Held out of the conservative profile rather than asserting compatibility.",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3101668503",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Mutie's Context Menu Icons",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "MutiesContextMenuIconsStorage42",
+      "WorkshopId": "3422112160",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Author archived this B42 icon extension and directs users to a newer mod. Old magazine-menu hooks overlap firearm-menu mods; hold these archived modules out of the conservative MP profile.",
+      "Notes": "Author order is Storage then Expanded then Redrawn. Expanded and Redrawn are independent optional additions and are not mutually exclusive. Original Mutie base is optional.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3422112160",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "[B42, READ DESC] Mutie's Context Menu Icons Expanded & Redrawn",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "MutiesContextMenuIconsExpanded42",
+      "WorkshopId": "3422112160",
+      "Aliases": [],
+      "Requires": [
+        "MutiesContextMenuIconsStorage42"
+      ],
+      "LoadAfter": [
+        "MutiesContextMenuIcons",
+        "ReloadAllMagazines",
+        "GunsOfMarz"
+      ],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Author archived this B42 icon extension and directs users to a newer mod. Old magazine-menu hooks overlap firearm-menu mods; hold these archived modules out of the conservative MP profile.",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3422112160",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "[B42, READ DESC] Mutie's Context Menu Icons Expanded & Redrawn",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "MutiesContextMenuIconsRedrawn42",
+      "WorkshopId": "3422112160",
+      "Aliases": [],
+      "Requires": [
+        "MutiesContextMenuIconsStorage42"
+      ],
+      "LoadAfter": [
+        "MutiesContextMenuIconsExpanded42",
+        "MutiesContextMenuIcons"
+      ],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Author archived this B42 icon extension and directs users to a newer mod. Old magazine-menu hooks overlap firearm-menu mods; hold these archived modules out of the conservative MP profile.",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3422112160",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "[B42, READ DESC] Mutie's Context Menu Icons Expanded & Redrawn",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "RainingZombies",
+      "WorkshopId": "3763651059",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Author recommends singleplayer only: local physics can cause multiplayer desync and MP has not been tested.",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3763651059",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Raining Zombies",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "ReloadAllMagazines",
+      "WorkshopId": "2920899878",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [
+        "GunsOfMarz",
+        "HBTacReload"
+      ],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Guns of Marz author explicitly integrates Load All Magazines. ReloadAllMagazines itself replaces ISInventoryPaneContextMenu.doMagazineMenu, so arbitrary other replacements of that method remain a risk.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2920899878",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "[B41 / B42] Load All Magazines",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "J93RunningBloodPools",
+      "WorkshopId": "3784951301",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [
+        "RainCleansBlood",
+        "Improved_Blood_Ffects"
+      ],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author states MP support and compatibility with RainCleansBlood and blood retextures. These specific pairs are author-supported; server performance still needs testing under hordes.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3784951301",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Blood Pools & Footprints [B42.20+]",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "SmokingSoundsOverhaul",
+      "WorkshopId": "2857762294",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [
+        "TrueSmoking",
+        "NoLighterNeeded"
+      ],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Current author states B42.20.3+ SP/MP support and includes a True Smoking compatibility patch. If another mod supplies lighting sounds, choose Puffs only in game options.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2857762294",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "[B42.20.3+/B41]Smoking Sounds Overhaul",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "SomewhatWater",
+      "WorkshopId": "3582960654",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Use one water variant at a time; only normal SomewhatWater is requested. Water quality toggle or game restart may be needed after shader updates.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3582960654",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Somewhat Water",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "SPNCCFaces",
+      "WorkshopId": "3414634809",
+      "Aliases": [],
+      "Requires": [
+        "SPNCC"
+      ],
+      "LoadAfter": [],
+      "Conflicts": [
+        "SPNRetexture",
+        "SPNRetextureUnderwear",
+        "TombBodyTex",
+        "TombBodyTexDOLL",
+        "TombBodyTexNUDE",
+        "TombBodyCustom"
+      ],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Vanilla faces require vanilla256 body textures. TombBody alone ships models without textures, so this requested combination can use vanilla textures, with SPNCCDetailsHD disabled. Faces conflict with Tomb texture/head addons, not merely the model-only TombBody entry.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3414634809",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Spongie's Character Customisation",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "SPNRetextureCustom",
+      "WorkshopId": "3340255334",
+      "Aliases": [],
+      "Requires": [
+        "SPNCC"
+      ],
+      "LoadAfter": [],
+      "Conflicts": [
+        "TombBody"
+      ],
+      "Priority": 500,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Player retexture customisation is incompatible with the selected Tomb body and the submitted list supplies no required compatible human Spongie texture variant.",
+      "Notes": "Spongie player-texture customisation addon supports512 textures. The submitted list has no human SPNRetexture or SPNRetextureUnderwear variant; a zombie texture is not a substitute. Author explicitly excludes Tomb body/player retexture combinations.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3340255334",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Spongie's Character Retexture",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "SPNRetextureZombieUnderwear",
+      "WorkshopId": "3340255334",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "The author acknowledged erroneous Tomb incompatibility exclusions in zombie texture variants, but current downloaded mod.info has not been verified. Hold this optional zombie variant until metadata and Tomb visuals can be checked; never rewrite exclusions automatically.",
+      "Notes": "Author acknowledged Tomb exclusions were accidentally added to zombie variants and suggested removing them. Installer must obey current downloaded mod.info; do not manually rewrite exclusions or promise that stale metadata will accept this pair.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3340255334",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Spongie's Character Retexture",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "SpnHairAPI",
+      "WorkshopId": "3041733782",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [
+        "improvedhairmenubuild42"
+      ],
+      "Conflicts": [],
+      "Priority": 8800,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author requires loading after Improved Hair Menu if that optional menu is installed. It is a hair-selection/growth mod, not a dependency of every hairstyle.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3041733782",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Spongie's Hairstyle Unlocker",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "TrueSleep",
+      "WorkshopId": "3781533687",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author requires server SleepAllowed=true and SleepNeeded=true. Optional FastForwardMultiplier5 recommendation slows group nights; it is not a prerequisite. Build42.13+ and MP-focused.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3781533687",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "True Sleep - Better Multiplayer Sleep",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "TrueSmoking",
+      "WorkshopId": "3423984426",
+      "Aliases": [],
+      "Requires": [
+        "MoodleFramework",
+        "StarlitLibrary"
+      ],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Use original author3423984426, not replacement3803208661 with same ModId. Author lists Smoking Sounds Overhaul and I Might Need A Lighter/IDNAL support. Verify moodles, partial smoking, reconnect, and multiple clients on Framework2.7.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3423984426",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "True Smoking [B42MP]",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "TombBody",
+      "WorkshopId": "3429790870",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [
+        "SPNCC",
+        "SPNCCDetails",
+        "SPNCCFaces"
+      ],
+      "Conflicts": [],
+      "Priority": 580,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "TombBody is model-only; vanilla textures are supported. Optional TombBodyTex/TombBodyCustom supply512 underwear textures/heads but are not hard dependencies. Main-menu enablement and a full client restart are mandatory for these model swaps; server enablement alone does not load them on clients.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3429790870",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Tomb's Player Body Overhaul",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "TombBodyCompat",
+      "WorkshopId": "3431734923",
+      "Aliases": [],
+      "Requires": [
+        "TombBody"
+      ],
+      "LoadAfter": [
+        "TombBody",
+        "SpnCloth",
+        "SpnOpenCloth",
+        "VanillaOutfitsExpanded",
+        "VanillaGearExpanded",
+        "SM4BootsExpandedB42",
+        "SpnHair",
+        "FH"
+      ],
+      "Conflicts": [],
+      "Priority": 9500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author requires compatibility files below every affected clothing mod and a full game restart. Supports Spongie Clothing/Open Jackets, Vanilla Gear Expanded and Boots Expanded among others.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3431734923",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Tomb's Player Body Overhaul - Compatibility",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "TombBodyCompatBootsExp",
+      "WorkshopId": "3431734923",
+      "Aliases": [],
+      "Requires": [
+        "TombBody",
+        "SM4BootsExpandedB42"
+      ],
+      "LoadAfter": [
+        "TombBody",
+        "SpnCloth",
+        "SpnOpenCloth",
+        "VanillaOutfitsExpanded",
+        "VanillaGearExpanded",
+        "SM4BootsExpandedB42",
+        "SpnHair",
+        "FH",
+        "TombBodyCompat"
+      ],
+      "Conflicts": [
+        "TombBodyCompatBootsExpVanilla"
+      ],
+      "Priority": 9600,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3431734923",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Tomb's Player Body Overhaul - Compatibility",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "SM4BootsExpandedB42",
+      "WorkshopId": "2850935956",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [
+        "SpnCloth",
+        "SpnOpenCloth",
+        "VanillaOutfitsExpanded",
+        "VanillaGearExpanded"
+      ],
+      "Conflicts": [
+        "SM4BootsExpandedB42VanillaONLY"
+      ],
+      "Priority": 9200,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Full clothing/shoe version is retained. Author labels B42 version beta and42.15 quickfix; current42.21 operation must be checked from mod.info and in-game clothing tests. Tomb footwear patch loads after it.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2850935956",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Boots Expanded 11 for B41 and B42 (42.15 quickfix)",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "TombBodyCompatBootsExpVanilla",
+      "WorkshopId": "3431734923",
+      "Aliases": [],
+      "Requires": [
+        "TombBody",
+        "SM4BootsExpandedB42VanillaONLY"
+      ],
+      "LoadAfter": [],
+      "Conflicts": [
+        "TombBodyCompatBootsExp"
+      ],
+      "Priority": 9600,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Alternative patch for the vanilla-only Boots variant; this profile selects full Boots Expanded and its matching full compatibility patch.",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3431734923",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Tomb's Player Body Overhaul - Compatibility",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "SM4BootsExpandedB42VanillaONLY",
+      "WorkshopId": "2850935956",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [
+        "SM4BootsExpandedB42"
+      ],
+      "Priority": 500,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Alternative to full Boots Expanded. Enable one shoe variant; full SM4BootsExpandedB42 is selected for this profile.",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2850935956",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Boots Expanded 11 for B41 and B42 (42.15 quickfix)",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "VanillaGearExpanded",
+      "WorkshopId": "3401134276",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Original Tango item supports B41/B42. Author warns new loot only appears in unvisited areas of existing saves; TombBodyCompat covers its clothing meshes.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3401134276",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Vanilla Gear Expanded",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "ZombiesTargetAnimals",
+      "WorkshopId": "3774007514",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Author describes MP support as ALPHA and several feeding/herd features remain singleplayer-only; exclude from conservative MP profile pending multi-client animal tests.",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3774007514",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Zombies Target Animals",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "ADRENALINE_MOD",
+      "WorkshopId": "2807001835",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Discontinued; author says panic is disabled or bugged in B42 multiplayer and the mod currently does nothing there.",
+      "Notes": "",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2807001835",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Adrenaline - Panic Counters Tiredness [DISCONTINUED]",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "ZombieDismembermentB42",
+      "WorkshopId": "3811483602",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": false,
+      "DisabledReason": "Author labels multiplayer experimental and explicitly says no live multiplayer or dedicated-server gameplay session has been tested. Persistence after area unload/restart is also unverified.",
+      "Notes": "Author lists no extra mod dependency. Interaction with body/masks/combat/corpse mods needs testing; reports of Tomb support are unverified by the author.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3811483602",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Zombie Dismemberment",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      },
+      "MinimumVersion": "42.21"
+    },
+    {
+      "ModId": "YakiHRB42",
+      "WorkshopId": "2787539183",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [
+        "SpnHair",
+        "FH"
+      ],
+      "Conflicts": [],
+      "Priority": 9000,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author explicitly supports Fluffy Hair and says not to combine with Yaki Hair Salon (not requested). Retexture should win after hair models.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2787539183",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Yaki's Hair Retexture",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "Briefing",
+      "WorkshopId": "3565244378",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 8500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author says Build42 multiplayer works, each joining player gets a briefing. It is not the newer SurvivorBriefing mod with a different internal ID.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3565244378",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "[B42] Briefing",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "KAMER_RepairWall",
+      "WorkshopId": "3006882690",
+      "Aliases": [],
+      "Requires": [
+        "KAMER_WallHealth"
+      ],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author explicitly requires Show Wall Health in multiplayer, although optional for singleplayer. Both original items have just been updated for42.21; downloaded versionMax must match.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3006882690",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "[B41&B42] Repair Wall",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "KAMER_WallHealth",
+      "WorkshopId": "3002666175",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Original author updated both health/repair items for42.21. Do not silently bypass downloaded versionMax if old cache is still installed.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=3002666175",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "[B41&B42] Show Wall Health",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "SpnHair",
+      "WorkshopId": "2463184726",
+      "Aliases": [],
+      "Requires": [
+        "FH"
+      ],
+      "LoadAfter": [
+        "FH"
+      ],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author requires Fluffy Hair enabled in server Mods line, not merely downloaded. Other Workshop listed companions are recommended, not mandatory.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2463184726",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Spongie's Hair",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "FH",
+      "WorkshopId": "2447729538",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Author tested B42 hostedMP and Spongie Hair. Replaces vanilla hat/hair model bindings, so other mods replacing those bindings need direct checks.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2447729538",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Fluffy Hair [B41/B42]",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    },
+    {
+      "ModId": "Improved_Blood_Ffects",
+      "WorkshopId": "2648152698",
+      "Aliases": [],
+      "Requires": [],
+      "LoadAfter": [],
+      "Conflicts": [],
+      "Priority": 500,
+      "MultiplayerEnabled": true,
+      "DisabledReason": "",
+      "Notes": "Texture/effect replacement; Blood Pools author explicitly supports blood retextures. Requires a visual/performance check with the complete server pack.",
+      "Source": "https://steamcommunity.com/sharedfiles/filedetails/?id=2648152698",
+      "Evidence": {
+        "CheckedAt": "2026-10-11",
+        "WorkshopTitle": "Improved Blood Effects",
+        "PublicApiResult": 1,
+        "ConsumerAppId": 108600,
+        "AuthorModIdListed": true,
+        "RuntimeMultiplayerTested": false
+      }
+    }
+  ],
+  "Dependencies": [],
+  "OptionalCompanions": [
+    {
+      "ModId": "TombBodyTex",
+      "WorkshopId": "3429790870",
+      "Reason": "Optional512-underwear texture alternative to vanilla256; conflicts withSPNCCFaces. Not automatically required."
+    },
+    {
+      "ModId": "TombBodyCustom",
+      "WorkshopId": "3429790870",
+      "Reason": "OptionalSPNCC head pack; conflicts withSPNCCFaces. Not automatically required."
+    },
+    {
+      "ModId": "MoodleFrameworkBC",
+      "WorkshopId": "3789490511",
+      "Reason": "Optional bridge for outdatedMoodleFramework consumers. Author warns MP inconsistencies. Do not automatically force it."
+    },
+    {
+      "ModId": "improvedhairmenubuild42",
+      "WorkshopId": "3589548354",
+      "Reason": "Optional visualhairmenu. If added, loadbeforeSpnHairAPI."
+    },
+    {
+      "ModId": "Linux_Animsets_Marz_Mods",
+      "WorkshopId": "3774316897",
+      "Reason": "AuthorLinux-only animationcasepatch. User installer targetsWindows; do notaddautomatically."
+    }
+  ]
+}

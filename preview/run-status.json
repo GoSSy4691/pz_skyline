@@ -1,0 +1,12 @@
+{
+  "Status": "preview",
+  "Mode": "Server",
+  "BuildVersion": "42.21.0",
+  "Profile": "Multiplayer",
+  "ValidatedFromDownloads": false,
+  "RuntimeTested": false,
+  "ClientProfileInstalled": false,
+  "ServerIniUpdated": false,
+  "ClientPackagePath": "",
+  "Message": ""
+}
