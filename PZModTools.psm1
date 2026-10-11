@@ -452,11 +452,11 @@ function Invoke-PZClientWorkshopDownloads {
         } else { $session = & $SessionFactory }
         $directories = @{}
         Write-Host "Subscribing to $($Ids.Count) Workshop items in the signed-in Steam client's account..."
-        foreach ($id in $Ids) { $session.SubscribeItem([ulong]$id) }
+        foreach ($id in $Ids) { $session.SubscribeItem([uint64]$id) }
         $position = 0
         foreach ($id in $Ids) {
             $position++
-            $numericId = [ulong]$id
+            $numericId = [uint64]$id
             $clock = [Diagnostics.Stopwatch]::StartNew()
             while ($true) {
                 $session.Pump()

@@ -2,6 +2,8 @@
 
 **On Windows, extract the project folder and double-click `Start-PZModSetup.cmd`.** Choose **Player** or **Server owner**, then **Download/update**. The menu guides you through locations, Steam sign-in, the selected mods, and any remaining game steps. No PowerShell commands are needed for normal setup.
 
+Windows PowerShell 5.1, included with Windows, is supported; PowerShell 7 is not required. The CMD launcher opens a console and runs PowerShell inside it. To launch from a PowerShell prompt, first change to this project folder, then run `.\Start-PZModSetup.cmd`. The `.\` prefix tells PowerShell to run the file in the current folder.
+
 The supplied new list contains **294 requested mod IDs**. The default multiplayer profile selects **260** and holds back **34** with visible reasons. It downloads **224 unique Workshop items** for that selection; all requested IDs map to 249 items. Incompatible variants, abandoned mods, uncertain multiplayer features, and redundant additions are retained in the catalog for review. They are not downloaded unless their Workshop package also supplies a selected mod. See [COMPATIBILITY.md](COMPATIBILITY.md) for every exclusion and the remaining limitations.
 
 This is a setup and metadata validation tool. It has **not** been tested by running your Windows server or joining it. A source review and a dependency order cannot establish error-free gameplay for this entire pack.

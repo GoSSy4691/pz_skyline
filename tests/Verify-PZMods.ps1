@@ -40,29 +40,29 @@ function New-Record {
 }
 class FakeClientSession {
     [hashtable]$Directories
-    [Collections.Generic.List[ulong]]$Subscribed = [Collections.Generic.List[ulong]]::new()
-    [Collections.Generic.List[ulong]]$Downloads = [Collections.Generic.List[ulong]]::new()
+    [Collections.Generic.List[uint64]]$Subscribed = [Collections.Generic.List[uint64]]::new()
+    [Collections.Generic.List[uint64]]$Downloads = [Collections.Generic.List[uint64]]::new()
     [bool]$AlwaysFail
     [bool]$Disposed
     [bool]$PendingForever
     [int]$DownloadResult
     [int]$PumpCount
     FakeClientSession([hashtable]$Directories) { $this.Directories = $Directories }
-    [void]SubscribeItem([ulong]$Id) { $this.Subscribed.Add($Id) }
-    [bool]SubscriptionPending([ulong]$Id) { return $this.PendingForever }
-    [uint32]GetItemState([ulong]$Id) {
+    [void]SubscribeItem([uint64]$Id) { $this.Subscribed.Add($Id) }
+    [bool]SubscriptionPending([uint64]$Id) { return $this.PendingForever }
+    [uint32]GetItemState([uint64]$Id) {
         if ($Id -eq 111 -or $this.DownloadResult -eq 1) { return 5 }
         # Leave a cached, installed folder after an error to ensure it never hides that error.
         if ($this.DownloadResult -gt 1) { return 5 }
         return 9
     }
-    [bool]DownloadItem([ulong]$Id) {
+    [bool]DownloadItem([uint64]$Id) {
         $this.Downloads.Add($Id)
         $this.DownloadResult = if ($this.AlwaysFail -or $this.Downloads.Count -eq 1) { 2 } else { 1 }
         return $true
     }
-    [int]GetDownloadResult([ulong]$Id) { return $this.DownloadResult }
-    [string]GetInstallFolder([ulong]$Id) { return $this.Directories[[string]$Id] }
+    [int]GetDownloadResult([uint64]$Id) { return $this.DownloadResult }
+    [string]GetInstallFolder([uint64]$Id) { return $this.Directories[[string]$Id] }
     [void]Pump() { $this.PumpCount++ }
     [void]Dispose() { $this.Disposed = $true }
 }
